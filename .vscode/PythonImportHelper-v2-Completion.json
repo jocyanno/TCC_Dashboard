@@ -1,0 +1,273 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "criacao_mapa",
+        "importPath": "src.page1.mapa",
+        "description": "src.page1.mapa",
+        "isExtraImport": true,
+        "detail": "src.page1.mapa",
+        "documentation": {}
+    },
+    {
+        "label": "grafico_heatmap",
+        "importPath": "src.page1.matriz",
+        "description": "src.page1.matriz",
+        "isExtraImport": true,
+        "detail": "src.page1.matriz",
+        "documentation": {}
+    },
+    {
+        "label": "grafico_heatmap_page2",
+        "importPath": "src.page2.grafico_heatmap",
+        "description": "src.page2.grafico_heatmap",
+        "isExtraImport": true,
+        "detail": "src.page2.grafico_heatmap",
+        "documentation": {}
+    },
+    {
+        "label": "series_temporais",
+        "importPath": "src.page2.seriesTemporais",
+        "description": "src.page2.seriesTemporais",
+        "isExtraImport": true,
+        "detail": "src.page2.seriesTemporais",
+        "documentation": {}
+    },
+    {
+        "label": "graficoAlagamentoseDeslizamentos",
+        "importPath": "src.page3.grafico",
+        "description": "src.page3.grafico",
+        "isExtraImport": true,
+        "detail": "src.page3.grafico",
+        "documentation": {}
+    },
+    {
+        "label": "folium",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "folium",
+        "description": "folium",
+        "detail": "folium",
+        "documentation": {}
+    },
+    {
+        "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "HeatMap",
+        "importPath": "folium.plugins",
+        "description": "folium.plugins",
+        "isExtraImport": true,
+        "detail": "folium.plugins",
+        "documentation": {}
+    },
+    {
+        "label": "HeatMap",
+        "importPath": "folium.plugins",
+        "description": "folium.plugins",
+        "isExtraImport": true,
+        "detail": "folium.plugins",
+        "documentation": {}
+    },
+    {
+        "label": "HeatMap",
+        "importPath": "folium.plugins",
+        "description": "folium.plugins",
+        "isExtraImport": true,
+        "detail": "folium.plugins",
+        "documentation": {}
+    },
+    {
+        "label": "LinearColormap",
+        "importPath": "branca.colormap",
+        "description": "branca.colormap",
+        "isExtraImport": true,
+        "detail": "branca.colormap",
+        "documentation": {}
+    },
+    {
+        "label": "LinearColormap",
+        "importPath": "branca.colormap",
+        "description": "branca.colormap",
+        "isExtraImport": true,
+        "detail": "branca.colormap",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "option_menu",
+        "importPath": "streamlit_option_menu",
+        "description": "streamlit_option_menu",
+        "isExtraImport": true,
+        "detail": "streamlit_option_menu",
+        "documentation": {}
+    },
+    {
+        "label": "gatilhos_hidro",
+        "importPath": "src.pag.gatilhos_hidro",
+        "description": "src.pag.gatilhos_hidro",
+        "isExtraImport": true,
+        "detail": "src.pag.gatilhos_hidro",
+        "documentation": {}
+    },
+    {
+        "label": "monitoramento_real",
+        "importPath": "src.pag.monitoramento_real",
+        "description": "src.pag.monitoramento_real",
+        "isExtraImport": true,
+        "detail": "src.pag.monitoramento_real",
+        "documentation": {}
+    },
+    {
+        "label": "visao_historica",
+        "importPath": "src.pag.visao_historica",
+        "description": "src.pag.visao_historica",
+        "isExtraImport": true,
+        "detail": "src.pag.visao_historica",
+        "documentation": {}
+    },
+    {
+        "label": "gatilhos_hidro",
+        "kind": 2,
+        "importPath": "src.pag.gatilhos_hidro",
+        "description": "src.pag.gatilhos_hidro",
+        "peekOfCode": "def gatilhos_hidro():\n    st.markdown(\"### Gatilhos Hidrometeorologicos\")\n    st.write(\"Selecione a Região desejada:\")\n    criacao_mapa()\n    grafico_heatmap()",
+        "detail": "src.pag.gatilhos_hidro",
+        "documentation": {}
+    },
+    {
+        "label": "monitoramento_real",
+        "kind": 2,
+        "importPath": "src.pag.monitoramento_real",
+        "description": "src.pag.monitoramento_real",
+        "peekOfCode": "def monitoramento_real():\n    st.markdown(\"### Monitoramento Real\")\n    grafico_heatmap_page2()\n    series_temporais()",
+        "detail": "src.pag.monitoramento_real",
+        "documentation": {}
+    },
+    {
+        "label": "visao_historica",
+        "kind": 2,
+        "importPath": "src.pag.visao_historica",
+        "description": "src.pag.visao_historica",
+        "peekOfCode": "def visao_historica():\n    st.markdown(\"### Histórico Alagamento e Deslizamentos\")\n    col1, col2 = st.columns(2)\n    # Seletores de data\n    start_date = col1.date_input(\"Data inicial\")\n    end_date = col2.date_input(\"Data Final\")\n    graficoAlagamentoseDeslizamentos()",
+        "detail": "src.pag.visao_historica",
+        "documentation": {}
+    },
+    {
+        "label": "criacao_mapa",
+        "kind": 2,
+        "importPath": "src.page1.mapa",
+        "description": "src.page1.mapa",
+        "peekOfCode": "def criacao_mapa():\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0),\n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n    HeatMap(data).add_to(mapa)\n    # Cria um mapa de cores",
+        "detail": "src.page1.mapa",
+        "documentation": {}
+    },
+    {
+        "label": "grafico_heatmap",
+        "kind": 2,
+        "importPath": "src.page1.matriz",
+        "description": "src.page1.matriz",
+        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"### Matriz de Correlação\")\n    data = {\n        \"Acumulado\": [0.1, 0.2, 0.3],\n        \"+1 dia Apac\": [0.4, 0.5, 0.6],\n        \"+2 dias Apac\": [0.7, 0.8, 0.9],\n    }\n    df = pd.DataFrame(data, index=[\"3 dias\", \"6 dias\", \"15 dias\"])\n    cmap = sns.color_palette(\"RdYlGn_r\", as_cmap=True)\n    plt.figure(figsize=(6, 3))",
+        "detail": "src.page1.matriz",
+        "documentation": {}
+    },
+    {
+        "label": "grafico_heatmap_page2",
+        "kind": 2,
+        "importPath": "src.page2.grafico_heatmap",
+        "description": "src.page2.grafico_heatmap",
+        "peekOfCode": "def grafico_heatmap_page2():\n  piedade = [-8.1128, -35.0150]\n  socorro = [-8.1089, -34.9844]\n  data = [\n      (*piedade, 1.5),\n      (*socorro, 2.0),\n  ]\n  mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n  HeatMap(data).add_to(mapa)\n  # Cria um mapa de cores",
+        "detail": "src.page2.grafico_heatmap",
+        "documentation": {}
+    },
+    {
+        "label": "series_temporais",
+        "kind": 2,
+        "importPath": "src.page2.seriesTemporais",
+        "description": "src.page2.seriesTemporais",
+        "peekOfCode": "def series_temporais():\n    # Suponha que temos o seguinte DataFrame\n    data = pd.DataFrame(\n        {\n            \"data\": pd.date_range(start=\"1/1/2022\", periods=100),\n            \"Piedade\": np.random.randint(1, 20, 100),\n            \"Socorro\": np.random.randint(1, 20, 100),\n            \"Muribeca\": np.random.randint(1, 20, 100),\n        }\n    )",
+        "detail": "src.page2.seriesTemporais",
+        "documentation": {}
+    },
+    {
+        "label": "graficoAlagamentoseDeslizamentos",
+        "kind": 2,
+        "importPath": "src.page3.grafico",
+        "description": "src.page3.grafico",
+        "peekOfCode": "def graficoAlagamentoseDeslizamentos():\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0), \n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n    HeatMap(data).add_to(mapa)\n    folium_static(mapa)",
+        "detail": "src.page3.grafico",
+        "documentation": {}
+    }
+]
