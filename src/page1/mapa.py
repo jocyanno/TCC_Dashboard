@@ -2,9 +2,10 @@ import folium
 from streamlit_folium import folium_static
 from folium.plugins import HeatMap
 from branca.colormap import LinearColormap
+from src.utils.tamanho_tela import tamanho_tela
 
 
-def criacao_mapa():
+def criacao_mapa(widthImage):
 
     piedade = [-8.1128, -35.0150]
     socorro = [-8.1089, -34.9844]
@@ -39,4 +40,4 @@ def criacao_mapa():
         ),
     ).add_to(mapa)
 
-    folium_static(mapa)
+    folium_static(mapa, width=widthImage, height=400)

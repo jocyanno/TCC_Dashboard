@@ -1,18 +1,71 @@
-import folium
-from streamlit_folium import folium_static
-from folium.plugins import HeatMap
+import plotly.graph_objects as px
+import numpy as np
+import streamlit as st
+import pandas as pd
+import plotly.graph_objects as go
 
-def graficoAlagamentoseDeslizamentos():
-    piedade = [-8.1128, -35.0150]
-    socorro = [-8.1089, -34.9844]
 
-    data = [
-        (*piedade, 1.5),
-        (*socorro, 2.0), 
-    ]
+def graficoAlagamentoseDeslizamentos(widthImage):
 
-    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)
+    regiao = st.selectbox(
+        "Selecione a região", options=["Todas", "Piedade", "Socorro", "Muribeca"]
+    )
 
-    HeatMap(data).add_to(mapa)
+    np.random.seed(42)
+    dados = {
+        "Piedade": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),
+        "Socorro": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),
+        "Muribeca": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),
+    }
 
-    folium_static(mapa)
+    datas = pd.date_range(start="1/1/2020", periods=100).to_pydatetime().tolist()
+    np.random.shuffle(datas)
+
+    if regiao == "Todas":
+        for reg, (chuva_mm, deslizamentos) in dados.items():
+
+            plot = go.Figure(
+                data=[
+                    go.Scatter(
+                        x=chuva_mm,
+                        y=deslizamentos,
+                        mode="markers",
+                        marker=dict(
+                            color=deslizamentos, size=deslizamentos, showscale=True
+                        ),
+                        text=datas,
+                        hovertemplate="<b>Data:</b> %{text}<br>"
+                        + "<b>Chuva (mm):</b> %{x}<br>"
+                        + "<b>Deslizamentos:</b> %{y}<br>",
+                    )
+                ]
+            )
+            plot.update_xaxes(title_text="Chuva em mm")
+            plot.update_yaxes(title_text="Quantidade de Deslizamentos")
+            plot.update_layout(width=widthImage)
+            st.header(reg)
+            st.plotly_chart(plot)
+    else:
+        chuva_mm, deslizamentos = dados[regiao]
+        plot = go.Figure(
+            data=[
+                go.Scatter(
+                    x=chuva_mm,
+                    y=deslizamentos,
+                    mode="markers",
+                    marker=dict(
+                        color=deslizamentos, size=deslizamentos, showscale=True
+                    ),
+                    text=datas,
+                    hovertemplate="<b>Data:</b> %{text}<br>"
+                    + "<b>Chuva (mm):</b> %{x}<br>"
+                    + "<b>Deslizamentos:</b> %{y}<br>",
+                )
+            ]
+        )
+
+        plot.update_xaxes(title_text="Chuva em mm")
+        plot.update_yaxes(title_text="Quantidade de Deslizamentos")
+        plot.update_layout(width=widthImage)
+        st.header(regiao)
+        st.plotly_chart(plot)

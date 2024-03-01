@@ -3,8 +3,9 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 def grafico_heatmap():
-    st.markdown("### Matriz de Correlação")
+    st.markdown("### Matriz de Risco")
 
     data = {
         "Acumulado": [0.1, 0.2, 0.3],
@@ -15,7 +16,7 @@ def grafico_heatmap():
 
     cmap = sns.color_palette("RdYlGn_r", as_cmap=True)
 
-    plt.figure(figsize=(6, 3))
+    plt.figure(figsize=(6, 1))
     sns.heatmap(df, cmap=cmap, annot=True, cbar_kws={"label": "Risco"})
 
     plt.text(

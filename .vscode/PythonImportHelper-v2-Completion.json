@@ -25,6 +25,54 @@
         "documentation": {}
     },
     {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
         "label": "grafico_heatmap_page2",
         "importPath": "src.page2.grafico_heatmap",
         "description": "src.page2.grafico_heatmap",
@@ -66,7 +114,23 @@
         "documentation": {}
     },
     {
+        "label": "components",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
         "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "components",
         "importPath": "streamlit_folium",
         "description": "streamlit_folium",
         "isExtraImport": true,
@@ -167,6 +231,32 @@
         "documentation": {}
     },
     {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit_javascript",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit_javascript",
+        "description": "streamlit_javascript",
+        "detail": "streamlit_javascript",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "option_menu",
         "importPath": "streamlit_option_menu",
         "description": "streamlit_option_menu",
@@ -203,7 +293,7 @@
         "kind": 2,
         "importPath": "src.pag.gatilhos_hidro",
         "description": "src.pag.gatilhos_hidro",
-        "peekOfCode": "def gatilhos_hidro():\n    st.markdown(\"### Gatilhos Hidrometeorologicos\")\n    st.write(\"Selecione a Região desejada:\")\n    criacao_mapa()\n    grafico_heatmap()",
+        "peekOfCode": "def gatilhos_hidro():\n    st.markdown(\"### Gatilhos Hidrometeorologicos\")\n    st.write(\"Selecione a Região desejada:\")\n    widthImage = tamanho_tela()\n    criacao_mapa(widthImage)\n    grafico_heatmap()",
         "detail": "src.pag.gatilhos_hidro",
         "documentation": {}
     },
@@ -212,7 +302,7 @@
         "kind": 2,
         "importPath": "src.pag.monitoramento_real",
         "description": "src.pag.monitoramento_real",
-        "peekOfCode": "def monitoramento_real():\n    st.markdown(\"### Monitoramento Real\")\n    grafico_heatmap_page2()\n    series_temporais()",
+        "peekOfCode": "def monitoramento_real():\n    st.markdown(\"### Monitoramento Real\")\n    widthImage = tamanho_tela()\n    grafico_heatmap_page2(widthImage)\n    series_temporais(widthImage)",
         "detail": "src.pag.monitoramento_real",
         "documentation": {}
     },
@@ -221,7 +311,7 @@
         "kind": 2,
         "importPath": "src.pag.visao_historica",
         "description": "src.pag.visao_historica",
-        "peekOfCode": "def visao_historica():\n    st.markdown(\"### Histórico Alagamento e Deslizamentos\")\n    col1, col2 = st.columns(2)\n    # Seletores de data\n    start_date = col1.date_input(\"Data inicial\")\n    end_date = col2.date_input(\"Data Final\")\n    graficoAlagamentoseDeslizamentos()",
+        "peekOfCode": "def visao_historica():\n    st.markdown(\"### Histórico Deslizamentos\")\n    widthImage = tamanho_tela()\n    graficoAlagamentoseDeslizamentos(widthImage)",
         "detail": "src.pag.visao_historica",
         "documentation": {}
     },
@@ -230,7 +320,7 @@
         "kind": 2,
         "importPath": "src.page1.mapa",
         "description": "src.page1.mapa",
-        "peekOfCode": "def criacao_mapa():\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0),\n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n    HeatMap(data).add_to(mapa)\n    # Cria um mapa de cores",
+        "peekOfCode": "def criacao_mapa(widthImage):\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0),\n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n    HeatMap(data).add_to(mapa)\n    # Cria um mapa de cores",
         "detail": "src.page1.mapa",
         "documentation": {}
     },
@@ -239,7 +329,7 @@
         "kind": 2,
         "importPath": "src.page1.matriz",
         "description": "src.page1.matriz",
-        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"### Matriz de Correlação\")\n    data = {\n        \"Acumulado\": [0.1, 0.2, 0.3],\n        \"+1 dia Apac\": [0.4, 0.5, 0.6],\n        \"+2 dias Apac\": [0.7, 0.8, 0.9],\n    }\n    df = pd.DataFrame(data, index=[\"3 dias\", \"6 dias\", \"15 dias\"])\n    cmap = sns.color_palette(\"RdYlGn_r\", as_cmap=True)\n    plt.figure(figsize=(6, 3))",
+        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"### Matriz de Risco\")\n    data = {\n        \"Acumulado\": [0.1, 0.2, 0.3],\n        \"+1 dia Apac\": [0.4, 0.5, 0.6],\n        \"+2 dias Apac\": [0.7, 0.8, 0.9],\n    }\n    df = pd.DataFrame(data, index=[\"3 dias\", \"6 dias\", \"15 dias\"])\n    cmap = sns.color_palette(\"RdYlGn_r\", as_cmap=True)\n    plt.figure(figsize=(6, 1))",
         "detail": "src.page1.matriz",
         "documentation": {}
     },
@@ -248,7 +338,7 @@
         "kind": 2,
         "importPath": "src.page2.grafico_heatmap",
         "description": "src.page2.grafico_heatmap",
-        "peekOfCode": "def grafico_heatmap_page2():\n  piedade = [-8.1128, -35.0150]\n  socorro = [-8.1089, -34.9844]\n  data = [\n      (*piedade, 1.5),\n      (*socorro, 2.0),\n  ]\n  mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n  HeatMap(data).add_to(mapa)\n  # Cria um mapa de cores",
+        "peekOfCode": "def grafico_heatmap_page2(widthImage):\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0),\n    ]\n    mapa = folium.Map(location=[-8.11208, -35.0154], zoom_start=13, width=widthImage)\n    HeatMap(data).add_to(mapa)\n    # Cria um mapa de cores",
         "detail": "src.page2.grafico_heatmap",
         "documentation": {}
     },
@@ -257,8 +347,17 @@
         "kind": 2,
         "importPath": "src.page2.seriesTemporais",
         "description": "src.page2.seriesTemporais",
-        "peekOfCode": "def series_temporais():\n    # Suponha que temos o seguinte DataFrame\n    data = pd.DataFrame(\n        {\n            \"data\": pd.date_range(start=\"1/1/2022\", periods=100),\n            \"Piedade\": np.random.randint(1, 20, 100),\n            \"Socorro\": np.random.randint(1, 20, 100),\n            \"Muribeca\": np.random.randint(1, 20, 100),\n        }\n    )",
+        "peekOfCode": "def series_temporais(widthImage):\n  # Suponha que temos o seguinte DataFrame\n  data = pd.DataFrame(\n    {\n      \"data\": pd.date_range(start=\"1/1/2022\", periods=100),\n      \"Piedade\": np.random.randint(1, 20, 100),\n      \"Socorro\": np.random.randint(1, 20, 100),\n      \"Muribeca\": np.random.randint(1, 20, 100),\n    }\n  )",
         "detail": "src.page2.seriesTemporais",
+        "documentation": {}
+    },
+    {
+        "label": "graficoAlagamentoseDeslizamentos",
+        "kind": 2,
+        "importPath": "src.page3.backup",
+        "description": "src.page3.backup",
+        "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0), \n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13, width=widthImage)\n    HeatMap(data).add_to(mapa)\n    # Renderiza o mapa como HTML e exibe-o usando a função components.html",
+        "detail": "src.page3.backup",
         "documentation": {}
     },
     {
@@ -266,8 +365,26 @@
         "kind": 2,
         "importPath": "src.page3.grafico",
         "description": "src.page3.grafico",
-        "peekOfCode": "def graficoAlagamentoseDeslizamentos():\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0), \n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n    HeatMap(data).add_to(mapa)\n    folium_static(mapa)",
+        "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    regiao = st.selectbox(\n        \"Selecione a região\", options=[\"Todas\", \"Piedade\", \"Socorro\", \"Muribeca\"]\n    )\n    np.random.seed(42)\n    dados = {\n        \"Piedade\": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),\n        \"Socorro\": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),\n        \"Muribeca\": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),\n    }",
         "detail": "src.page3.grafico",
+        "documentation": {}
+    },
+    {
+        "label": "tamanho_tela",
+        "kind": 2,
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "peekOfCode": "def tamanho_tela():\n    ui_width = st_js.st_javascript(\"window.innerWidth\")\n    return ui_width",
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
+        "label": "favicon",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "favicon = Image.open(\"src/assets/favicon.jpg\")\nst.set_page_config(page_title=\"TCC Jocyanno\", layout=\"wide\", page_icon=favicon)\nwith st.sidebar:\n    selected = option_menu(\n        menu_title=\"Menu\",\n        options=[\"Gatilhos Hidro\", \"Monitoramento Real\", \"Visão Histórica\"],\n        icons=[\"patch-exclamation\", \"r-circle-fill\", \"reception-4\"],\n        menu_icon=\"cast\",\n        default_index=0,\n    )",
+        "detail": "app",
         "documentation": {}
     }
 ]
