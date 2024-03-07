@@ -311,7 +311,7 @@
         "kind": 2,
         "importPath": "src.pag.visao_historica",
         "description": "src.pag.visao_historica",
-        "peekOfCode": "def visao_historica():\n    st.markdown(\"### Histórico Deslizamentos\")\n    widthImage = tamanho_tela()\n    graficoAlagamentoseDeslizamentos(widthImage)",
+        "peekOfCode": "def visao_historica():\n    st.markdown(\"### Histórico Deslizamentos e Chuva\")\n    widthImage = tamanho_tela()\n    graficoAlagamentoseDeslizamentos(widthImage)",
         "detail": "src.pag.visao_historica",
         "documentation": {}
     },

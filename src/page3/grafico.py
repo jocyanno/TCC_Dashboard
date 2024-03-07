@@ -19,53 +19,67 @@ def graficoAlagamentoseDeslizamentos(widthImage):
     }
 
     datas = pd.date_range(start="1/1/2020", periods=100).to_pydatetime().tolist()
-    np.random.shuffle(datas)
+    datas.sort()
 
     if regiao == "Todas":
-        for reg, (chuva_mm, deslizamentos) in dados.items():
+      for reg, (chuva_mm, deslizamentos) in dados.items():
+        plot = go.Figure()
 
-            plot = go.Figure(
-                data=[
-                    go.Scatter(
-                        x=chuva_mm,
-                        y=deslizamentos,
-                        mode="markers",
-                        marker=dict(
-                            color=deslizamentos, size=deslizamentos, showscale=True
-                        ),
-                        text=datas,
-                        hovertemplate="<b>Data:</b> %{text}<br>"
-                        + "<b>Chuva (mm):</b> %{x}<br>"
-                        + "<b>Deslizamentos:</b> %{y}<br>",
-                    )
-                ]
-            )
-            plot.update_xaxes(title_text="Chuva em mm")
-            plot.update_yaxes(title_text="Quantidade de Deslizamentos")
-            plot.update_layout(width=widthImage)
-            st.header(reg)
-            st.plotly_chart(plot)
-    else:
-        chuva_mm, deslizamentos = dados[regiao]
-        plot = go.Figure(
-            data=[
-                go.Scatter(
-                    x=chuva_mm,
-                    y=deslizamentos,
-                    mode="markers",
-                    marker=dict(
-                        color=deslizamentos, size=deslizamentos, showscale=True
-                    ),
-                    text=datas,
-                    hovertemplate="<b>Data:</b> %{text}<br>"
-                    + "<b>Chuva (mm):</b> %{x}<br>"
-                    + "<b>Deslizamentos:</b> %{y}<br>",
-                )
-            ]
+        plot.add_trace(
+          go.Scatter(
+            x=datas,
+            y=chuva_mm,
+            mode="lines",
+            name="Chuva em mm",
+            hovertemplate="<b>Data:</b> %{x}<br>"
+            + "<b>Chuva (mm):</b> %{y}<br>",
+          )
         )
 
-        plot.update_xaxes(title_text="Chuva em mm")
-        plot.update_yaxes(title_text="Quantidade de Deslizamentos")
-        plot.update_layout(width=widthImage)
-        st.header(regiao)
+        plot.add_trace(
+          go.Scatter(
+            x=datas,
+            y=deslizamentos,
+            mode="lines",
+            name="Deslizamentos",
+            hovertemplate="<b>Data:</b> %{x}<br>"
+            + "<b>Deslizamentos:</b> %{y}<br>",
+          )
+        )
+
+        plot.update_xaxes(title_text="Data")
+        plot.update_yaxes(title_text="Quantidade")
+        plot.update_layout(width=widthImage, template='plotly_white')
+        st.header(reg)
         st.plotly_chart(plot)
+    else:
+      chuva_mm, deslizamentos = dados[regiao]
+      plot = go.Figure()
+
+      plot.add_trace(
+        go.Scatter(
+          x=datas,
+          y=chuva_mm,
+          mode="lines",
+          name="Chuva em mm",
+          hovertemplate="<b>Data:</b> %{x}<br>"
+          + "<b>Chuva (mm):</b> %{y}<br>",
+        )
+      )
+
+      plot.add_trace(
+        go.Scatter(
+          x=datas,
+          y=deslizamentos,
+          mode="lines",
+          name="Deslizamentos",
+          hovertemplate="<b>Data:</b> %{x}<br>"
+          + "<b>Deslizamentos:</b> %{y}<br>",
+        )
+      )
+
+      plot.update_xaxes(title_text="Data")
+      plot.update_yaxes(title_text="Quantidade")
+      plot.update_layout(width=widthImage, template='plotly_white')
+      st.header(regiao)
+      st.plotly_chart(plot)
