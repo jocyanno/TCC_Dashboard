@@ -65,14 +65,6 @@
         "documentation": {}
     },
     {
-        "label": "tamanho_tela",
-        "importPath": "src.utils.tamanho_tela",
-        "description": "src.utils.tamanho_tela",
-        "isExtraImport": true,
-        "detail": "src.utils.tamanho_tela",
-        "documentation": {}
-    },
-    {
         "label": "grafico_heatmap_page2",
         "importPath": "src.page2.grafico_heatmap",
         "description": "src.page2.grafico_heatmap",
@@ -231,6 +223,15 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "plotly.graph_objects",
         "kind": 6,
         "isExtraImport": true,
@@ -347,7 +348,7 @@
         "kind": 2,
         "importPath": "src.page2.seriesTemporais",
         "description": "src.page2.seriesTemporais",
-        "peekOfCode": "def series_temporais(widthImage):\n  # Suponha que temos o seguinte DataFrame\n  data = pd.DataFrame(\n    {\n      \"data\": pd.date_range(start=\"1/1/2022\", periods=100),\n      \"Piedade\": np.random.randint(1, 20, 100),\n      \"Socorro\": np.random.randint(1, 20, 100),\n      \"Muribeca\": np.random.randint(1, 20, 100),\n    }\n  )",
+        "peekOfCode": "def series_temporais(widthImage):\n  try:\n    # Suponha que temos o seguinte DataFrame\n    data = pd.DataFrame(\n      {\n        \"data\": pd.date_range(start=\"1/1/2022\", periods=100),\n        \"Piedade\": np.random.randint(1, 20, 100),\n        \"Socorro\": np.random.randint(1, 20, 100),\n        \"Muribeca\": np.random.randint(1, 20, 100),\n      }",
         "detail": "src.page2.seriesTemporais",
         "documentation": {}
     },
