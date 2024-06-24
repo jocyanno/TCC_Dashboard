@@ -4,6 +4,7 @@
 # from branca.colormap import LinearColormap
 import streamlit as st
 from config_db import consultar_ultimo_registro_estacao
+from datetime import timedelta
 
 def cards_informativo():
   
@@ -12,6 +13,8 @@ def cards_informativo():
     dados  = consultar_ultimo_registro_estacao('260790106A')
     
     (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados
+    
+    data_hora_ajustada = data_hora - timedelta(hours=3)
     
     # Cria três colunas com larguras iguais
     col1, col2, col3 = st.columns(3)
@@ -35,7 +38,7 @@ def cards_informativo():
         </div>
         """.format(
           val_24h,
-          data_hora.strftime('%Y-%m-%d %H:%M:%S'),
+          data_hora_ajustada.strftime('%Y-%m-%d %H:%M:%S'),
         ),
         unsafe_allow_html=True,
       )
@@ -59,7 +62,7 @@ def cards_informativo():
         </div>
         """.format(
           val_48h,
-          data_hora.strftime('%Y-%m-%d %H:%M:%S'),
+          data_hora_ajustada.strftime('%Y-%m-%d %H:%M:%S'),
         ),
         unsafe_allow_html=True,
       )
@@ -83,7 +86,7 @@ def cards_informativo():
         </div>
         """.format(
           val_120h,
-          data_hora.strftime('%Y-%m-%d %H:%M:%S'),
+          data_hora_ajustada.strftime('%Y-%m-%d %H:%M:%S'),
         ),
         unsafe_allow_html=True,
       )

@@ -439,6 +439,47 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -463,39 +504,6 @@
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -874,7 +882,7 @@
         "kind": 2,
         "importPath": "dev.src.page1.mapa",
         "description": "dev.src.page1.mapa",
-        "peekOfCode": "def cards_informativo():\n    st.title(\"Gatilhos Hidrometeorologicos Piedade\")\n    dados  = consultar_ultimo_registro_estacao('260790106A')\n    (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados\n    # Cria três colunas com larguras iguais\n    col1, col2, col3 = st.columns(3)\n    with col1:\n      st.markdown(\n        \"\"\"\n        <div style=\"",
+        "peekOfCode": "def cards_informativo():\n    st.title(\"Gatilhos Hidrometeorologicos Piedade\")\n    dados  = consultar_ultimo_registro_estacao('260790106A')\n    (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados\n    data_hora_ajustada = data_hora - timedelta(hours=3)\n    # Cria três colunas com larguras iguais\n    col1, col2, col3 = st.columns(3)\n    with col1:\n      st.markdown(\n        \"\"\"",
         "detail": "dev.src.page1.mapa",
         "documentation": {}
     },

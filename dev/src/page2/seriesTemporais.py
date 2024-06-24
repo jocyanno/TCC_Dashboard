@@ -52,21 +52,22 @@ def series_temporais(widthImage):
                 acc48hr = ultimo_registro['acc48hr']
                 acc72hr = ultimo_registro['acc72hr']
                 acc96hr = ultimo_registro['acc96hr']
+                acc120hr = ultimo_registro['acc120hr']
                 datahora = ultimo_registro['datahora']
 
                 datahora_ajustada = datahora - timedelta(hours=3)
 
                 # Dados de exemplo, substitua com os valores reais
                 dados_chuva = {
-                    "Período": ["1h", "3h", "6h", "12h", "24h", "48h", "72h", "96h"],
-                    "Chuva Acumulada (mm)": [acc1hr, acc3hr, acc6hr, acc12hr, acc24hr, acc48hr, acc72hr, acc96hr]
+                    "Período": ["1h", "3h", "6h", "12h", "24h", "48h", "72h", "96h", "120h"],
+                    "Chuva Acumulada (mm)": [acc1hr, acc3hr, acc6hr, acc12hr, acc24hr, acc48hr, acc72hr, acc96hr, acc120hr]
                 }
 
                 # Criando um DataFrame
                 df_chuva = pd.DataFrame(dados_chuva)
 
                 # Adicionando uma coluna auxiliar para ordenação correta
-                df_chuva["Duração (h)"] = [1, 3, 6, 12, 24, 48, 72, 96]
+                df_chuva["Duração (h)"] = [1, 3, 6, 12, 24, 48, 72, 96, 120]
 
                 # Ordenando o DataFrame pela coluna auxiliar de forma decrescente
                 df_chuva = df_chuva.sort_values(by="Duração (h)", ascending=False)
@@ -76,7 +77,7 @@ def series_temporais(widthImage):
 
                 # Criando o gráfico de linha com Plotly
                 fig = px.line(df_chuva, x="Período", y="Chuva Acumulada (mm)", title=f"Estação: {nome_estacao} | Última atualização: {datahora_ajustada}")
-                fig.update_xaxes(categoryorder='array', categoryarray=["96h", "72h", "48h", "24h", "12h", "6h", "3h", "1h"])
+                fig.update_xaxes(categoryorder='array', categoryarray=["120h","96h", "72h", "48h", "24h", "12h", "6h", "3h", "1h"])
 
                 # Atualizar o layout do gráfico para usar widthImage como largura
                 fig.update_layout(width=widthImage*0.5)
