@@ -1,0 +1,131 @@
+[
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "selenium.webdriver.chrome.options",
+        "description": "selenium.webdriver.chrome.options",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.options",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "schedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "schedule",
+        "description": "schedule",
+        "detail": "schedule",
+        "documentation": {}
+    },
+    {
+        "label": "get_apac_tendencia",
+        "kind": 2,
+        "importPath": "scrapApac",
+        "description": "scrapApac",
+        "peekOfCode": "def get_apac_tendencia():\n  # Step 2: Send a GET request to the page URL\n  page_url = 'https://sites.google.com/view/tendenciadeprecipitacao/paginainicial'\n  response = requests.get(page_url)\n  # print(response)\n  # Step 3: Parse the HTML content and locate the first iframe element\n  soup = BeautifulSoup(response.content, 'html.parser')\n  outer_iframe = soup.find('iframe')\n  ## get parent element from outer_iframe\n  data_url = outer_iframe.find_parent('div', {'data-url': True})['data-url']",
+        "detail": "scrapApac",
+        "documentation": {}
+    },
+    {
+        "label": "job",
+        "kind": 2,
+        "importPath": "scrapApac",
+        "description": "scrapApac",
+        "peekOfCode": "def job():\n  print(\"I'm working...\")\n  get_apac_tendencia()\n  print(\"Dados inseridos com sucesso!\")\n# Agendar a tarefa para ser executada a cada 6 horas\nschedule.every(6).hours.do(job)\ntry: \n  get_apac_tendencia()\n  while True:\n    schedule.run_pending()",
+        "detail": "scrapApac",
+        "documentation": {}
+    }
+]

@@ -1,5 +1,339 @@
 [
     {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "cemaden_api_token",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "password_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "user_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "user_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "password_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "cemaden_api_token",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "cemaden_api_token",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "user_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "password_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_cemaden",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_apac",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "importPath": "db_utils",
+        "description": "db_utils",
+        "isExtraImport": true,
+        "detail": "db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "create_table",
+        "importPath": "db_utils",
+        "description": "db_utils",
+        "isExtraImport": true,
+        "detail": "db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "importPath": "db_utils",
+        "description": "db_utils",
+        "isExtraImport": true,
+        "detail": "db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "importPath": "db_utils",
+        "description": "db_utils",
+        "isExtraImport": true,
+        "detail": "db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "insert_data",
+        "importPath": "db_utils",
+        "description": "db_utils",
+        "isExtraImport": true,
+        "detail": "db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "connection_close",
+        "importPath": "db_utils",
+        "description": "db_utils",
+        "isExtraImport": true,
+        "detail": "db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "process_and_store_data_estacoes",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "verificar_e_criar_tabela",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "process_and_store_data",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "schedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "schedule",
+        "description": "schedule",
+        "detail": "schedule",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "streamlit",
         "kind": 6,
         "isExtraImport": true,
@@ -9,7 +343,7 @@
         "documentation": {}
     },
     {
-        "label": "criacao_mapa",
+        "label": "cards_informativo",
         "importPath": "src.page1.mapa",
         "description": "src.page1.mapa",
         "isExtraImport": true,
@@ -49,27 +383,19 @@
         "documentation": {}
     },
     {
-        "label": "tamanho_tela",
-        "importPath": "src.utils.tamanho_tela",
-        "description": "src.utils.tamanho_tela",
+        "label": "atualizarPage",
+        "importPath": "src.utils.auto_refresh",
+        "description": "src.utils.auto_refresh",
         "isExtraImport": true,
-        "detail": "src.utils.tamanho_tela",
+        "detail": "src.utils.auto_refresh",
         "documentation": {}
     },
     {
-        "label": "tamanho_tela",
-        "importPath": "src.utils.tamanho_tela",
-        "description": "src.utils.tamanho_tela",
+        "label": "atualizarPage",
+        "importPath": "src.utils.auto_refresh",
+        "description": "src.utils.auto_refresh",
         "isExtraImport": true,
-        "detail": "src.utils.tamanho_tela",
-        "documentation": {}
-    },
-    {
-        "label": "grafico_heatmap_page2",
-        "importPath": "src.page2.grafico_heatmap",
-        "description": "src.page2.grafico_heatmap",
-        "isExtraImport": true,
-        "detail": "src.page2.grafico_heatmap",
+        "detail": "src.utils.auto_refresh",
         "documentation": {}
     },
     {
@@ -89,101 +415,27 @@
         "documentation": {}
     },
     {
-        "label": "folium",
-        "kind": 6,
+        "label": "consultar_ultimo_registro_estacao",
+        "importPath": "config_db",
+        "description": "config_db",
         "isExtraImport": true,
-        "importPath": "folium",
-        "description": "folium",
-        "detail": "folium",
+        "detail": "config_db",
         "documentation": {}
     },
     {
-        "label": "folium_static",
-        "importPath": "streamlit_folium",
-        "description": "streamlit_folium",
+        "label": "consultar_ultimo_registro_estacao",
+        "importPath": "config_db",
+        "description": "config_db",
         "isExtraImport": true,
-        "detail": "streamlit_folium",
+        "detail": "config_db",
         "documentation": {}
     },
     {
-        "label": "components",
-        "importPath": "streamlit_folium",
-        "description": "streamlit_folium",
+        "label": "consultar_estacoes_disponiveis_e_ultimos_registros",
+        "importPath": "config_db",
+        "description": "config_db",
         "isExtraImport": true,
-        "detail": "streamlit_folium",
-        "documentation": {}
-    },
-    {
-        "label": "folium_static",
-        "importPath": "streamlit_folium",
-        "description": "streamlit_folium",
-        "isExtraImport": true,
-        "detail": "streamlit_folium",
-        "documentation": {}
-    },
-    {
-        "label": "components",
-        "importPath": "streamlit_folium",
-        "description": "streamlit_folium",
-        "isExtraImport": true,
-        "detail": "streamlit_folium",
-        "documentation": {}
-    },
-    {
-        "label": "folium_static",
-        "importPath": "streamlit_folium",
-        "description": "streamlit_folium",
-        "isExtraImport": true,
-        "detail": "streamlit_folium",
-        "documentation": {}
-    },
-    {
-        "label": "HeatMap",
-        "importPath": "folium.plugins",
-        "description": "folium.plugins",
-        "isExtraImport": true,
-        "detail": "folium.plugins",
-        "documentation": {}
-    },
-    {
-        "label": "HeatMap",
-        "importPath": "folium.plugins",
-        "description": "folium.plugins",
-        "isExtraImport": true,
-        "detail": "folium.plugins",
-        "documentation": {}
-    },
-    {
-        "label": "HeatMap",
-        "importPath": "folium.plugins",
-        "description": "folium.plugins",
-        "isExtraImport": true,
-        "detail": "folium.plugins",
-        "documentation": {}
-    },
-    {
-        "label": "LinearColormap",
-        "importPath": "branca.colormap",
-        "description": "branca.colormap",
-        "isExtraImport": true,
-        "detail": "branca.colormap",
-        "documentation": {}
-    },
-    {
-        "label": "LinearColormap",
-        "importPath": "branca.colormap",
-        "description": "branca.colormap",
-        "isExtraImport": true,
-        "detail": "branca.colormap",
-        "documentation": {}
-    },
-    {
-        "label": "seaborn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "seaborn",
-        "description": "seaborn",
-        "detail": "seaborn",
+        "detail": "config_db",
         "documentation": {}
     },
     {
@@ -196,30 +448,21 @@
         "documentation": {}
     },
     {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
         "label": "matplotlib.pyplot",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "plotly.express",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "plotly.express",
-        "description": "plotly.express",
-        "detail": "plotly.express",
         "documentation": {}
     },
     {
@@ -232,12 +475,94 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_ultimo_registro_tendencia",
+        "importPath": "config_db_Apac",
+        "description": "config_db_Apac",
+        "isExtraImport": true,
+        "detail": "config_db_Apac",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "folium",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "folium",
+        "description": "folium",
+        "detail": "folium",
+        "documentation": {}
+    },
+    {
+        "label": "components",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "HeatMap",
+        "importPath": "folium.plugins",
+        "description": "folium.plugins",
+        "isExtraImport": true,
+        "detail": "folium.plugins",
+        "documentation": {}
+    },
+    {
         "label": "plotly.graph_objects",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "plotly.graph_objects",
         "description": "plotly.graph_objects",
         "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "st_autorefresh",
+        "importPath": "streamlit_autorefresh",
+        "description": "streamlit_autorefresh",
+        "isExtraImport": true,
+        "detail": "streamlit_autorefresh",
         "documentation": {}
     },
     {
@@ -290,102 +615,492 @@
         "documentation": {}
     },
     {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "selenium.webdriver.chrome.options",
+        "description": "selenium.webdriver.chrome.options",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.options",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "estacoes",
+        "kind": 2,
+        "importPath": "cemaden.estacoes.estacoes",
+        "description": "cemaden.estacoes.estacoes",
+        "peekOfCode": "def estacoes():\n  connection = create_connection()\n  verificar_e_criar_tabela(connection)\n  token_url = cemaden_api_token\n  login = {'email': user_cemaden, 'password': password_cemaden}\n  response = requests.post(token_url, json=login)\n  if response.status_code == 200:\n    content = response.json()\n    token = content['token']\n    sws_url = 'http://sws.cemaden.gov.br/PED/rest//pcds-cadastro/estacoes?'",
+        "detail": "cemaden.estacoes.estacoes",
+        "documentation": {}
+    },
+    {
+        "label": "verificar_e_criar_tabela",
+        "kind": 2,
+        "importPath": "cemaden.estacoes.utils",
+        "description": "cemaden.estacoes.utils",
+        "peekOfCode": "def verificar_e_criar_tabela(connection):\n  cursor = connection.cursor()\n  cursor.execute('''\n    CREATE TABLE IF NOT EXISTS estacoes (\n      id INT AUTO_INCREMENT PRIMARY KEY,\n      codestacao VARCHAR(255),\n      id_tipoestacao INT,\n      nome VARCHAR(255),\n      INDEX(codestacao(191))\n    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;",
+        "detail": "cemaden.estacoes.utils",
+        "documentation": {}
+    },
+    {
+        "label": "process_and_store_data_estacoes",
+        "kind": 2,
+        "importPath": "cemaden.estacoes.utils",
+        "description": "cemaden.estacoes.utils",
+        "peekOfCode": "def process_and_store_data_estacoes(connection, resposta):\n  cursor = connection.cursor()\n  for estacao in resposta.json():\n    cursor.execute(\"\"\"\n      SELECT 1 FROM estacoes WHERE codestacao = %s OR nome = %s LIMIT 1\n    \"\"\", (estacao['codestacao'], estacao['nome']))\n    if cursor.fetchone() is None:\n      cursor.execute(\"\"\"\n        INSERT INTO estacoes (codestacao, id_tipoestacao, nome)\n        VALUES (%s, %s, %s)",
+        "detail": "cemaden.estacoes.utils",
+        "documentation": {}
+    },
+    {
+        "label": "cemaden",
+        "kind": 2,
+        "importPath": "cemaden.cemaden",
+        "description": "cemaden.cemaden",
+        "peekOfCode": "def cemaden():\n  connection = create_connection()\n  create_table(connection)\n  token_url = cemaden_api_token\n  login = {'email': user_cemaden, 'password': password_cemaden}\n  response = requests.post(token_url, json=login)\n  if response.status_code == 200:\n    content = response.json()\n    token = content['token']\n    sws_url = 'http://sws.cemaden.gov.br/PED/rest/pcds-acum/acumulados-recentes'",
+        "detail": "cemaden.cemaden",
+        "documentation": {}
+    },
+    {
+        "label": "job",
+        "kind": 2,
+        "importPath": "cemaden.cemaden",
+        "description": "cemaden.cemaden",
+        "peekOfCode": "def job():\n  print(\"I'm working...\")\n  cemaden()\n  print(\"Dados inseridos com sucesso!\")\n# Agendar a tarefa para ser executada a cada 3 minutos\nschedule.every(3).minutes.do(job)\ntry: \n  cemaden()\n  while True:\n    schedule.run_pending()",
+        "detail": "cemaden.cemaden",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "kind": 2,
+        "importPath": "cemaden.db_utils",
+        "description": "cemaden.db_utils",
+        "peekOfCode": "def create_connection():\n  connection = mysql.connector.connect(\n    host=db_host,\n    user=db_user,\n    password=db_password,\n    database=db_database,\n    port=db_port\n  )\n  return connection\ndef connection_close(connection):",
+        "detail": "cemaden.db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "connection_close",
+        "kind": 2,
+        "importPath": "cemaden.db_utils",
+        "description": "cemaden.db_utils",
+        "peekOfCode": "def connection_close(connection):\n  connection.close()\ndef create_table(connection):\n  cursor = connection.cursor()\n  cursor.execute(\"\"\"\n    CREATE TABLE IF NOT EXISTS dados_cemaden (\n      id INT AUTO_INCREMENT PRIMARY KEY,\n      acc120hr FLOAT,\n      acc12hr FLOAT,\n      acc1hr FLOAT,",
+        "detail": "cemaden.db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "create_table",
+        "kind": 2,
+        "importPath": "cemaden.db_utils",
+        "description": "cemaden.db_utils",
+        "peekOfCode": "def create_table(connection):\n  cursor = connection.cursor()\n  cursor.execute(\"\"\"\n    CREATE TABLE IF NOT EXISTS dados_cemaden (\n      id INT AUTO_INCREMENT PRIMARY KEY,\n      acc120hr FLOAT,\n      acc12hr FLOAT,\n      acc1hr FLOAT,\n      acc24hr FLOAT,\n      acc3hr FLOAT,",
+        "detail": "cemaden.db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "insert_data",
+        "kind": 2,
+        "importPath": "cemaden.db_utils",
+        "description": "cemaden.db_utils",
+        "peekOfCode": "def insert_data(connection, data):\n  cursor = connection.cursor()\n  query_check = \"\"\"\n  SELECT EXISTS(\n    SELECT 1 FROM dados_cemaden WHERE codestacao = %s AND datahora = %s\n  )\n  \"\"\"\n  cursor.execute(query_check, (data[9], data[11]))\n  exists = cursor.fetchone()[0]\n  if not exists:",
+        "detail": "cemaden.db_utils",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "db_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "db_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "db_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "db_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "cemaden_api_token",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "cemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "user_cemaden",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "user_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "password_cemaden",
+        "kind": 5,
+        "importPath": "cemaden.load_env",
+        "description": "cemaden.load_env",
+        "peekOfCode": "password_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "cemaden.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "process_and_store_data",
+        "kind": 2,
+        "importPath": "cemaden.utils",
+        "description": "cemaden.utils",
+        "peekOfCode": "def process_and_store_data(response):\n  connection = create_connection()\n  data = response.json()\n  for record in data:  \n    data_tuple = (\n      record[\"acc120hr\"], record[\"acc12hr\"], record[\"acc1hr\"], record[\"acc24hr\"],\n      record[\"acc3hr\"], record[\"acc48hr\"], record[\"acc6hr\"], record[\"acc72hr\"],\n      record[\"acc96hr\"], record[\"codestacao\"], record[\"codibge\"],\n      record[\"datahora\"], record[\"id_estacao\"]\n    )",
+        "detail": "cemaden.utils",
+        "documentation": {}
+    },
+    {
         "label": "gatilhos_hidro",
         "kind": 2,
-        "importPath": "src.pag.gatilhos_hidro",
-        "description": "src.pag.gatilhos_hidro",
-        "peekOfCode": "def gatilhos_hidro():\n    st.markdown(\"### Gatilhos Hidrometeorologicos\")\n    st.write(\"Selecione a Região desejada:\")\n    widthImage = tamanho_tela()\n    criacao_mapa(widthImage)\n    grafico_heatmap()",
-        "detail": "src.pag.gatilhos_hidro",
+        "importPath": "dev.src.pag.gatilhos_hidro",
+        "description": "dev.src.pag.gatilhos_hidro",
+        "peekOfCode": "def gatilhos_hidro():\n    atualizarPage()\n    cards_informativo()\n    grafico_heatmap()",
+        "detail": "dev.src.pag.gatilhos_hidro",
         "documentation": {}
     },
     {
         "label": "monitoramento_real",
         "kind": 2,
-        "importPath": "src.pag.monitoramento_real",
-        "description": "src.pag.monitoramento_real",
-        "peekOfCode": "def monitoramento_real():\n    st.markdown(\"### Monitoramento Real\")\n    widthImage = tamanho_tela()\n    grafico_heatmap_page2(widthImage)\n    series_temporais(widthImage)",
-        "detail": "src.pag.monitoramento_real",
+        "importPath": "dev.src.pag.monitoramento_real",
+        "description": "dev.src.pag.monitoramento_real",
+        "peekOfCode": "def monitoramento_real():\n    st.title(\"Monitoramento Em Tempo Real\")\n    widthImage = tamanho_tela()\n    series_temporais(widthImage)\n    # grafico_heatmap_page2(widthImage)",
+        "detail": "dev.src.pag.monitoramento_real",
         "documentation": {}
     },
     {
         "label": "visao_historica",
         "kind": 2,
-        "importPath": "src.pag.visao_historica",
-        "description": "src.pag.visao_historica",
-        "peekOfCode": "def visao_historica():\n    st.markdown(\"### Histórico Deslizamentos e Chuva\")\n    widthImage = tamanho_tela()\n    graficoAlagamentoseDeslizamentos(widthImage)",
-        "detail": "src.pag.visao_historica",
+        "importPath": "dev.src.pag.visao_historica",
+        "description": "dev.src.pag.visao_historica",
+        "peekOfCode": "def visao_historica():\n    widthImage = tamanho_tela()\n    graficoAlagamentoseDeslizamentos(widthImage)",
+        "detail": "dev.src.pag.visao_historica",
         "documentation": {}
     },
     {
-        "label": "criacao_mapa",
+        "label": "cards_informativo",
         "kind": 2,
-        "importPath": "src.page1.mapa",
-        "description": "src.page1.mapa",
-        "peekOfCode": "def criacao_mapa(widthImage):\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0),\n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13)\n    HeatMap(data).add_to(mapa)\n    # Cria um mapa de cores",
-        "detail": "src.page1.mapa",
+        "importPath": "dev.src.page1.mapa",
+        "description": "dev.src.page1.mapa",
+        "peekOfCode": "def cards_informativo():\n    st.title(\"Gatilhos Hidrometeorologicos Piedade\")\n    dados  = consultar_ultimo_registro_estacao('260790106A')\n    (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados\n    # Cria três colunas com larguras iguais\n    col1, col2, col3 = st.columns(3)\n    with col1:\n      st.markdown(\n        \"\"\"\n        <div style=\"",
+        "detail": "dev.src.page1.mapa",
         "documentation": {}
     },
     {
         "label": "grafico_heatmap",
         "kind": 2,
-        "importPath": "src.page1.matriz",
-        "description": "src.page1.matriz",
-        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"### Matriz de Risco\")\n    data = {\n        \"Acumulado\": [0.1, 0.2, 0.3],\n        \"+1 dia Apac\": [0.4, 0.5, 0.6],\n        \"+2 dias Apac\": [0.7, 0.8, 0.9],\n    }\n    df = pd.DataFrame(data, index=[\"3 dias\", \"6 dias\", \"15 dias\"])\n    cmap = sns.color_palette(\"RdYlGn_r\", as_cmap=True)\n    plt.figure(figsize=(6, 1))",
-        "detail": "src.page1.matriz",
-        "documentation": {}
-    },
-    {
-        "label": "grafico_heatmap_page2",
-        "kind": 2,
-        "importPath": "src.page2.grafico_heatmap",
-        "description": "src.page2.grafico_heatmap",
-        "peekOfCode": "def grafico_heatmap_page2(widthImage):\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0),\n    ]\n    mapa = folium.Map(location=[-8.11208, -35.0154], zoom_start=13, width=widthImage)\n    HeatMap(data).add_to(mapa)\n    # Cria um mapa de cores",
-        "detail": "src.page2.grafico_heatmap",
+        "importPath": "dev.src.page1.matriz",
+        "description": "dev.src.page1.matriz",
+        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"### Acumulado + Tendência APAC por Risco\")\n    token_url = cemaden_api_token\n    login = {'email': user_cemaden, 'password': password_cemaden}\n    response = requests.post(token_url, json=login)\n    if response.status_code == 200:\n      content = response.json()\n      token = content['token']\n      dados = consultar_ultimo_registro_estacao('260790106A')\n      (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados",
+        "detail": "dev.src.page1.matriz",
         "documentation": {}
     },
     {
         "label": "series_temporais",
         "kind": 2,
-        "importPath": "src.page2.seriesTemporais",
-        "description": "src.page2.seriesTemporais",
-        "peekOfCode": "def series_temporais(widthImage):\n  try:\n    # Suponha que temos o seguinte DataFrame\n    data = pd.DataFrame(\n      {\n        \"data\": pd.date_range(start=\"1/1/2022\", periods=100),\n        \"Piedade\": np.random.randint(1, 20, 100),\n        \"Socorro\": np.random.randint(1, 20, 100),\n        \"Muribeca\": np.random.randint(1, 20, 100),\n      }",
-        "detail": "src.page2.seriesTemporais",
+        "importPath": "dev.src.page2.seriesTemporais",
+        "description": "dev.src.page2.seriesTemporais",
+        "peekOfCode": "def series_temporais(widthImage):\n    try:\n        atualizarPage()\n        # Consultar os dados das estações e seus últimos registros\n        dados = consultar_estacoes_disponiveis_e_ultimos_registros()\n        # Filtrar dados válidos e organizar em um DataFrame\n        dados_validos = [dado for dado in dados if dado is not None]\n        colunas = [\n            'id', 'acc120hr', 'acc12hr', 'acc1hr', 'acc24hr', 'acc3hr', 'acc48hr',\n            'acc6hr', 'acc72hr', 'acc96hr', 'codestacao', 'codibge', 'datahora', 'id_estacao', 'nome_estacao', 'regiao'",
+        "detail": "dev.src.page2.seriesTemporais",
         "documentation": {}
     },
     {
         "label": "graficoAlagamentoseDeslizamentos",
         "kind": 2,
-        "importPath": "src.page3.backup",
-        "description": "src.page3.backup",
+        "importPath": "dev.src.page3.backup",
+        "description": "dev.src.page3.backup",
         "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    piedade = [-8.1128, -35.0150]\n    socorro = [-8.1089, -34.9844]\n    data = [\n        (*piedade, 1.5),\n        (*socorro, 2.0), \n    ]\n    mapa = folium.Map(location=[-8.1128, -35.0150], zoom_start=13, width=widthImage)\n    HeatMap(data).add_to(mapa)\n    # Renderiza o mapa como HTML e exibe-o usando a função components.html",
-        "detail": "src.page3.backup",
+        "detail": "dev.src.page3.backup",
         "documentation": {}
     },
     {
         "label": "graficoAlagamentoseDeslizamentos",
         "kind": 2,
-        "importPath": "src.page3.grafico",
-        "description": "src.page3.grafico",
-        "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    regiao = st.selectbox(\n        \"Selecione a região\", options=[\"Todas\", \"Piedade\", \"Socorro\", \"Muribeca\"]\n    )\n    np.random.seed(42)\n    dados = {\n        \"Piedade\": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),\n        \"Socorro\": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),\n        \"Muribeca\": (np.random.randint(1, 101, 100), np.random.randint(1, 101, 100)),\n    }",
-        "detail": "src.page3.grafico",
+        "importPath": "dev.src.page3.grafico",
+        "description": "dev.src.page3.grafico",
+        "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    st.title(\"Histórico Chuva Por Região\")\n    # Dicionário mapeando regiões aos nomes dos arquivos\n    arquivos_por_regiao = {\n        \"Barra de Jangada\": \"Barra_de_Jangada_Calculado.csv\",\n        \"Cajueiro Seco\": \"Cajueiro_Seco_Calculado.csv\",\n        \"Cavaleiro\": \"Cavaleiro_Calculado.csv\",\n        \"CavaleiroII\": \"Cavaleiro2_Calculado.csv\",\n        \"Centro\": \"Centro_Calculado.csv\",\n        \"CuradoII\": \"CuradoII_Calculado.csv\",",
+        "detail": "dev.src.page3.grafico",
+        "documentation": {}
+    },
+    {
+        "label": "atualizarPage",
+        "kind": 2,
+        "importPath": "dev.src.utils.auto_refresh",
+        "description": "dev.src.utils.auto_refresh",
+        "peekOfCode": "def atualizarPage():\n    # Run the autorefresh about every 30000 milliseconds (30 seconds) and stop\n    count = st_autorefresh(interval=30000, limit=1440, key=\"fizzbuzzcounter\")\n    if count == 0:\n        st.write(\"\")\n    else:\n        st.write(\"\")",
+        "detail": "dev.src.utils.auto_refresh",
         "documentation": {}
     },
     {
         "label": "tamanho_tela",
         "kind": 2,
-        "importPath": "src.utils.tamanho_tela",
-        "description": "src.utils.tamanho_tela",
+        "importPath": "dev.src.utils.tamanho_tela",
+        "description": "dev.src.utils.tamanho_tela",
         "peekOfCode": "def tamanho_tela():\n    ui_width = st_js.st_javascript(\"window.innerWidth\")\n    return ui_width",
-        "detail": "src.utils.tamanho_tela",
+        "detail": "dev.src.utils.tamanho_tela",
         "documentation": {}
     },
     {
         "label": "favicon",
         "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "favicon = Image.open(\"src/assets/favicon.jpg\")\nst.set_page_config(page_title=\"TCC Jocyanno\", layout=\"wide\", page_icon=favicon)\nwith st.sidebar:\n    selected = option_menu(\n        menu_title=\"Menu\",\n        options=[\"Gatilhos Hidro\", \"Monitoramento Real\", \"Visão Histórica\"],\n        icons=[\"patch-exclamation\", \"r-circle-fill\", \"reception-4\"],\n        menu_icon=\"cast\",\n        default_index=0,\n    )",
-        "detail": "app",
+        "importPath": "dev.app",
+        "description": "dev.app",
+        "peekOfCode": "favicon = Image.open(\"src/assets/favicon.jpg\")\nst.set_page_config(page_title=\"TCC Jocyanno\", layout=\"wide\", page_icon=favicon)\nwith st.sidebar:\n    selected = option_menu(\n        menu_title=\"Menu\",\n        options=[\n            \"Gatilhos Hidro\",\n            \"Monitoramento Em Tempo Real\",\n            \"Histórico Chuva Por Região\",\n        ],",
+        "detail": "dev.app",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "kind": 2,
+        "importPath": "dev.config_db",
+        "description": "dev.config_db",
+        "peekOfCode": "def create_connection():\n  connection = mysql.connector.connect(\n    host=db_host,\n    user=db_user,\n    password=db_password,\n    database=db_database_cemaden,\n    port=db_port\n  )\n  return connection\ndef consultar_estacoes_disponiveis():",
+        "detail": "dev.config_db",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_estacoes_disponiveis",
+        "kind": 2,
+        "importPath": "dev.config_db",
+        "description": "dev.config_db",
+        "peekOfCode": "def consultar_estacoes_disponiveis():\n  connection = create_connection()\n  cursor = connection.cursor()\n  cursor.execute(\"SELECT * FROM estacoes\")\n  result = cursor.fetchall()\n  cursor.close()\n  connection.close()\n  return result\ndef consultar_ultimo_registro_estacao(codigo_estacao):\n  connection = create_connection()",
+        "detail": "dev.config_db",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_ultimo_registro_estacao",
+        "kind": 2,
+        "importPath": "dev.config_db",
+        "description": "dev.config_db",
+        "peekOfCode": "def consultar_ultimo_registro_estacao(codigo_estacao):\n  connection = create_connection()\n  cursor = connection.cursor()\n  query = \"\"\"\n  SELECT d.*, e.nome \n  FROM dados_cemaden d\n  JOIN estacoes e ON d.codestacao = e.codestacao\n  WHERE d.codestacao = %s \n  ORDER BY d.datahora DESC \n  LIMIT 1",
+        "detail": "dev.config_db",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_estacoes_disponiveis_e_ultimos_registros",
+        "kind": 2,
+        "importPath": "dev.config_db",
+        "description": "dev.config_db",
+        "peekOfCode": "def consultar_estacoes_disponiveis_e_ultimos_registros():\n  connection = create_connection()\n  cursor = connection.cursor()\n  cursor.execute(\"SELECT * FROM estacoes\")\n  estacoes = cursor.fetchall()\n  cursor.close()\n  connection.close()\n  ultimos_registros = []\n  for estacao in estacoes:\n    codigo_estacao = estacao[1]",
+        "detail": "dev.config_db",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection_tendencia_APAC",
+        "kind": 2,
+        "importPath": "dev.config_db_Apac",
+        "description": "dev.config_db_Apac",
+        "peekOfCode": "def create_connection_tendencia_APAC():\n  connection = mysql.connector.connect(\n    host=db_host,\n    user=db_user,\n    password=db_password,\n    database=db_database_apac,\n    port=db_port\n  )\n  return connection\ndef consultar_ultimo_registro_tendencia():",
+        "detail": "dev.config_db_Apac",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_ultimo_registro_tendencia",
+        "kind": 2,
+        "importPath": "dev.config_db_Apac",
+        "description": "dev.config_db_Apac",
+        "peekOfCode": "def consultar_ultimo_registro_tendencia():\n  connection = create_connection_tendencia_APAC()\n  cursor = connection.cursor()\n  query = \"\"\"\n  SELECT * FROM tendencia \n  ORDER BY id DESC \n  LIMIT 5\n  \"\"\"\n  cursor.execute(query)\n  result = cursor.fetchall()",
+        "detail": "dev.config_db_Apac",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_cemaden",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_apac",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_cemaden_historico",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "cemaden_api_token",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "cemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "user_cemaden",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "user_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "password_cemaden",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "password_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "get_apac_tendencia",
+        "kind": 2,
+        "importPath": "tendencia.scrapApac",
+        "description": "tendencia.scrapApac",
+        "peekOfCode": "def get_apac_tendencia():\n  # Step 2: Send a GET request to the page URL\n  page_url = 'https://sites.google.com/view/tendenciadeprecipitacao/paginainicial'\n  response = requests.get(page_url)\n  # print(response)\n  # Step 3: Parse the HTML content and locate the first iframe element\n  soup = BeautifulSoup(response.content, 'html.parser')\n  outer_iframe = soup.find('iframe')\n  ## get parent element from outer_iframe\n  data_url = outer_iframe.find_parent('div', {'data-url': True})['data-url']",
+        "detail": "tendencia.scrapApac",
+        "documentation": {}
+    },
+    {
+        "label": "job",
+        "kind": 2,
+        "importPath": "tendencia.scrapApac",
+        "description": "tendencia.scrapApac",
+        "peekOfCode": "def job():\n  print(\"I'm working...\")\n  get_apac_tendencia()\n  print(\"Dados inseridos com sucesso!\")\n# Agendar a tarefa para ser executada a cada 6 horas\nschedule.every(6).hours.do(job)\ntry: \n  get_apac_tendencia()\n  while True:\n    schedule.run_pending()",
+        "detail": "tendencia.scrapApac",
         "documentation": {}
     }
 ]
