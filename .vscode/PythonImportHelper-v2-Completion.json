@@ -864,7 +864,7 @@
         "kind": 2,
         "importPath": "dev.src.pag.monitoramento_real",
         "description": "dev.src.pag.monitoramento_real",
-        "peekOfCode": "def monitoramento_real():\n    st.title(\"Monitoramento Em Tempo Real\")\n    widthImage = tamanho_tela()\n    series_temporais(widthImage)\n    # grafico_heatmap_page2(widthImage)",
+        "peekOfCode": "def monitoramento_real():\n    widthImage = tamanho_tela()\n    series_temporais(widthImage)\n    # grafico_heatmap_page2(widthImage)",
         "detail": "dev.src.pag.monitoramento_real",
         "documentation": {}
     },
@@ -900,7 +900,7 @@
         "kind": 2,
         "importPath": "dev.src.page2.seriesTemporais",
         "description": "dev.src.page2.seriesTemporais",
-        "peekOfCode": "def series_temporais(widthImage):\n    try:\n        atualizarPage()\n        # Consultar os dados das estações e seus últimos registros\n        dados = consultar_estacoes_disponiveis_e_ultimos_registros()\n        # Filtrar dados válidos e organizar em um DataFrame\n        dados_validos = [dado for dado in dados if dado is not None]\n        colunas = [\n            'id', 'acc120hr', 'acc12hr', 'acc1hr', 'acc24hr', 'acc3hr', 'acc48hr',\n            'acc6hr', 'acc72hr', 'acc96hr', 'codestacao', 'codibge', 'datahora', 'id_estacao', 'nome_estacao', 'regiao'",
+        "peekOfCode": "def series_temporais(widthImage):\n    try:\n        st.title(\"Monitoramento Em Tempo Real\")\n        atualizarPage()\n        # Consultar os dados das estações e seus últimos registros\n        dados = consultar_estacoes_disponiveis_e_ultimos_registros()\n        # Filtrar dados válidos e organizar em um DataFrame\n        dados_validos = [dado for dado in dados if dado is not None]\n        colunas = [\n            'id', 'acc120hr', 'acc12hr', 'acc1hr', 'acc24hr', 'acc3hr', 'acc48hr',",
         "detail": "dev.src.page2.seriesTemporais",
         "documentation": {}
     },

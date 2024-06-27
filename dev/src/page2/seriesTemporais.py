@@ -7,6 +7,8 @@ from src.utils.auto_refresh import atualizarPage
 
 def series_temporais(widthImage):
     try:
+        st.title("Monitoramento Em Tempo Real")
+        
         atualizarPage()
         # Consultar os dados das estações e seus últimos registros
         dados = consultar_estacoes_disponiveis_e_ultimos_registros()
@@ -31,63 +33,79 @@ def series_temporais(widthImage):
             st.warning(f"Não há dados para as estações selecionadas no intervalo de tempo.")
             return
 
-        colunas = st.columns(2)
-
         # Filtrar por estações selecionadas
         if estacoes_selecionadas:
             df = df[df['nome_estacao'].isin(estacoes_selecionadas)]
+        
+        # Verificar se DataFrame está vazio após filtragem
+        if df.empty:
+            st.warning(f"Não há dados para as estações selecionadas no intervalo de tempo.")
+            return
 
-        for indice, (estacao, nome_estacao) in enumerate(df[['codestacao', 'nome_estacao']].drop_duplicates().values):
+        # Criar uma lista de períodos e a respectiva coluna no DataFrame
+        periodos = ["acc1hr", "acc3hr", "acc6hr", "acc12hr", "acc24hr", "acc48hr", "acc72hr", "acc96hr", "acc120hr"]
+        periodos_legendas = ["-1h", "-3h", "-6h", "-12h", "-24h", "-48h", "-72h", "-96h", "-120h"]
+
+        # Criar um DataFrame para o heatmap
+        heatmap_data = {
+            "Estacao": [],
+            "Periodo": [],
+            "Chuva Acumulada (mm)": [],
+            "DataHora": []
+        }
+
+        for estacao, nome_estacao in df[['codestacao', 'nome_estacao']].drop_duplicates().values:
             df_estacao = df[df['codestacao'] == estacao]
             df_estacao = df_estacao.sort_values(by='datahora')
 
             # Verificar se há dados suficientes para plotar
             if not df_estacao.empty:
                 ultimo_registro = df_estacao.iloc[-1]
-                acc1hr = ultimo_registro['acc1hr']
-                acc3hr = ultimo_registro['acc3hr']
-                acc6hr = ultimo_registro['acc6hr']
-                acc12hr = ultimo_registro['acc12hr']
-                acc24hr = ultimo_registro['acc24hr']
-                acc48hr = ultimo_registro['acc48hr']
-                acc72hr = ultimo_registro['acc72hr']
-                acc96hr = ultimo_registro['acc96hr']
-                acc120hr = ultimo_registro['acc120hr']
-                datahora = ultimo_registro['datahora']
 
-                datahora_ajustada = datahora - timedelta(hours=3)
+                for periodo, legenda in zip(periodos, periodos_legendas):
+                    heatmap_data["Estacao"].append(nome_estacao)
+                    heatmap_data["Periodo"].append(legenda)
+                    # Substituir NaN por 0
+                    valor_chuva = ultimo_registro[periodo] if pd.notna(ultimo_registro[periodo]) else 0
+                    heatmap_data["Chuva Acumulada (mm)"].append(valor_chuva)
+                    # Subtrair 3 horas do horário UTC e formatar a data e hora para o padrão brasileiro e 24 horas
+                    datahora_ajustada = ultimo_registro['datahora'] - timedelta(hours=3)
+                    heatmap_data["DataHora"].append(datahora_ajustada.strftime("%d/%m/%Y %H:%M"))
 
-                # Dados de exemplo, substitua com os valores reais
-                dados_chuva = {
-                    "Período": ["1h", "3h", "6h", "12h", "24h", "48h", "72h", "96h", "120h"],
-                    "Chuva Acumulada (mm)": [acc1hr, acc3hr, acc6hr, acc12hr, acc24hr, acc48hr, acc72hr, acc96hr, acc120hr]
-                }
+        # Criar um DataFrame a partir dos dados do heatmap
+        df_heatmap = pd.DataFrame(heatmap_data)
 
-                # Criando um DataFrame
-                df_chuva = pd.DataFrame(dados_chuva)
+        # Ordenar o DataFrame para garantir a ordem correta dos períodos
+        df_heatmap["Periodo"] = pd.Categorical(df_heatmap["Periodo"], categories=periodos_legendas[::-1], ordered=True)
 
-                # Adicionando uma coluna auxiliar para ordenação correta
-                df_chuva["Duração (h)"] = [1, 3, 6, 12, 24, 48, 72, 96, 120]
+        # Criar a tabela pivô para o heatmap
+        df_pivot = df_heatmap.pivot_table(index="Estacao", columns="Periodo", values="Chuva Acumulada (mm)", aggfunc='mean').fillna(0)
+        
+        # Adicionar a coluna DataHora ao DataFrame pivô
+        df_pivot_hover = df_heatmap.pivot_table(index="Estacao", columns="Periodo", values="DataHora", aggfunc=lambda x: x)
 
-                # Ordenando o DataFrame pela coluna auxiliar de forma decrescente
-                df_chuva = df_chuva.sort_values(by="Duração (h)", ascending=False)
+        # Definir altura e largura do gráfico
+        altura_grafico = widthImage * 0.3 # Utilize a largura especificada pela função
+        largura_grafico = widthImage # Ajuste a altura conforme necessário
 
-                # Removendo a coluna auxiliar, pois ela não é mais necessária
-                df_chuva = df_chuva.drop(columns=["Duração (h)"])
+        # Criar o heatmap com Plotly
+        fig = px.imshow(df_pivot,
+                        labels=dict(x="Período", y="Estação", color="Chuva Acumulada (mm)"),
+                        x=df_pivot.columns,
+                        y=df_pivot.index,
+                        text_auto=True,  # Adicionar valores no heatmap
+                        aspect="auto")  # Para ajustar a proporção do heatmap
 
-                # Criando o gráfico de linha com Plotly
-                fig = px.line(df_chuva, x="Período", y="Chuva Acumulada (mm)", title=f"Estação: {nome_estacao} | Última atualização: {datahora_ajustada}")
-                fig.update_xaxes(categoryorder='array', categoryarray=["120h","96h", "72h", "48h", "24h", "12h", "6h", "3h", "1h"])
+        # Atualizar o layout do gráfico para definir altura e largura
+        fig.update_layout(width=largura_grafico, height=altura_grafico)
 
-                # Atualizar o layout do gráfico para usar widthImage como largura
-                fig.update_layout(width=widthImage*0.5)
+        # Adicionar dados de hover personalizados
+        hovertemplate = "Período: %{x}<br>Estação: %{y}<br>Chuva Acumulada: %{z} mm<br>DataHora: %{customdata}"
+        fig.update_traces(hovertemplate=hovertemplate, customdata=df_pivot_hover.values)
 
-                # Usar a coluna correspondente para esta estação
-                with colunas[indice % 2]:
-                    st.plotly_chart(fig, use_container_width=False)
-            else:
-                with colunas[indice % 2]:  # Ajuste para evitar erro se houver mais de 2 estações
-                    st.warning(f"Não há dados suficientes para a estação: {nome_estacao}")
+        # Exibir o heatmap
+        st.plotly_chart(fig, use_container_width=True)
+
     except Exception as e:
         st.error(f"Erro ao processar os dados: {e}")
         return

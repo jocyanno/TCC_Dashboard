@@ -33,7 +33,7 @@ def cards_informativo():
           text-align: center;
         ">
         <h3 style="color: #FFFFFF;">Registro Últimas 24h</h3>
-        <h3 style="color: #FFFF00; font-size: 40px">{:.2f} mm</h3>
+        <h3 style="color: #2EB2FF; font-size: 40px">{:.2f} mm</h3>
         <h5 style="color: #FFFFFF;">Última Leitura: {}</h5>
         </div>
         """.format(
@@ -57,7 +57,7 @@ def cards_informativo():
           text-align: center;
         ">
         <h3 style="color: #FFFFFF;">Registro Últimas 48h</h3>
-        <h3 style="color: #FFA500; font-size: 40px">{:.2f} mm</h3>
+        <h3 style="color: #2EB2FF; font-size: 40px">{:.2f} mm</h3>
         <h5 style="color: #FFFFFF;">Última Leitura: {}</h5>
         </div>
         """.format(
@@ -81,7 +81,7 @@ def cards_informativo():
           text-align: center;
         ">
         <h3 style="color: #FFFFFF;">Registro Últimas 120h</h3>
-        <h3 style="color: #FF0000; font-size: 40px">{:.2f} mm</h3>
+        <h3 style="color: #2EB2FF; font-size: 40px">{:.2f} mm</h3>
         <h5 style="color: #FFFFFF;">Última Leitura: {}</h5>
         </div>
         """.format(

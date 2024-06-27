@@ -5,8 +5,6 @@ from src.utils.tamanho_tela import tamanho_tela
 
 
 def monitoramento_real():
-    st.title("Monitoramento Em Tempo Real")
-    
     widthImage = tamanho_tela()
     series_temporais(widthImage)
     

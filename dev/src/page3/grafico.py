@@ -34,12 +34,19 @@ def graficoAlagamentoseDeslizamentos(widthImage):
 
             st.subheader(f"Região: {reg}")
 
-            # Exibir os 5 gráficos diferentes
+            titulos = {
+              'chuva_24h': 'Índice de chuva acumulada 24h',
+              'chuva_3d': 'Índice de chuva acumulada 3 dias',
+              'chuva_6d': 'Índice de chuva acumulada 6 dias',
+              'chuva_7d': 'Índice de chuva acumulada 7 dias',
+              'chuva_15d': 'Índice de chuva acumulada 15 dias'
+            }
+
             for coluna in ['chuva_24h', 'chuva_3d', 'chuva_6d', 'chuva_7d', 'chuva_15d']:
-                fig = go.Figure()
-                fig.add_trace(go.Scatter(x=dados['datahora'], y=dados[coluna], mode='lines', name=coluna))
-                fig.update_layout(title=f"Gráfico de {coluna} para {reg}", xaxis_title='Data', yaxis_title=coluna, width=widthImage)
-                st.plotly_chart(fig)
+              fig = go.Figure()
+              fig.add_trace(go.Scatter(x=dados['datahora'], y=dados[coluna], mode='lines', name=titulos[coluna]))
+              fig.update_layout(title=f"{titulos[coluna]}", xaxis_title='Data', yaxis_title=titulos[coluna], width=widthImage)
+              st.plotly_chart(fig)
 
     else:
         # Construção do caminho do arquivo com base na região selecionada
@@ -67,8 +74,17 @@ def graficoAlagamentoseDeslizamentos(widthImage):
         dados_filtrados = dados.loc[mask]
 
         # Exibir os 5 gráficos diferentes para a região filtrada
+        titulos = {
+          'chuva_24h': 'Índice de chuva acumulada 24h',
+          'chuva_3d': 'Índice de chuva acumulada 3 dias',
+          'chuva_6d': 'Índice de chuva acumulada 6 dias',
+          'chuva_7d': 'Índice de chuva acumulada 7 dias',
+          'chuva_15d': 'Índice de chuva acumulada 15 dias'
+        }
+
         for coluna in ['chuva_24h', 'chuva_3d', 'chuva_6d', 'chuva_7d', 'chuva_15d']:
-            fig = go.Figure()
-            fig.add_trace(go.Scatter(x=dados_filtrados['datahora'], y=dados_filtrados[coluna], mode='lines', name=coluna))
-            fig.update_layout(title=f"Gráfico de {coluna} para {regiao}", xaxis_title='Data', yaxis_title=coluna, width=widthImage)
-            st.plotly_chart(fig)
+          fig = go.Figure()
+          fig.add_trace(go.Scatter(x=dados_filtrados['datahora'], y=dados_filtrados[coluna], mode='lines', name=coluna))
+          titulo_grafico = f"{titulos[coluna]}"
+          fig.update_layout(title=titulo_grafico, xaxis_title='Data', yaxis_title=coluna, width=widthImage)
+          st.plotly_chart(fig)

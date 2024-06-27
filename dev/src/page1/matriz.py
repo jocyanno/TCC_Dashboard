@@ -87,12 +87,12 @@ def grafico_heatmap():
       plt.figure(figsize=(7, 1))
 
       # Desenhar o heatmap com formatação das anotações
-      sns.heatmap(df, cmap=cmap, annot=True, fmt='.2f', cbar_kws={"label": "Chuva em mm    "}, annot_kws={"size": 12, "color": "black"})
+      sns.heatmap(df, cmap=cmap, annot=True, fmt='.2f', cbar=False, annot_kws={"size": 12, "color": "black"})
 
       # Adicionar textos adicionais
-      plt.text(4.5, 2.5, "Baixo Risco", ha="center", va="center", color="g", size="x-large")
-      plt.text(4.5, 1.5, "Risco Moderado", ha="center", va="center", color="y", size="x-large")
-      plt.text(4.5, 0.5, "Alerta", ha="center", va="center", color="r", size="x-large")
+      plt.text(3.5, 2.5, "Baixo Risco", ha="center", va="center", color="g", size="x-large")
+      plt.text(3.5, 1.5, "Risco Moderado", ha="center", va="center", color="y", size="x-large")
+      plt.text(3.5, 0.5, "Alerta", ha="center", va="center", color="r", size="x-large")
 
       # Mostrar o gráfico no Streamlit
       st.pyplot(plt)
