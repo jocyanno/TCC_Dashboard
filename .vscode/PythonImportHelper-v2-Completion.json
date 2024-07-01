@@ -891,7 +891,7 @@
         "kind": 2,
         "importPath": "dev.src.page1.matriz",
         "description": "dev.src.page1.matriz",
-        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"### Acumulado + Tendência APAC por Risco\")\n    token_url = cemaden_api_token\n    login = {'email': user_cemaden, 'password': password_cemaden}\n    response = requests.post(token_url, json=login)\n    if response.status_code == 200:\n      content = response.json()\n      token = content['token']\n      dados = consultar_ultimo_registro_estacao('260790106A')\n      (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados",
+        "peekOfCode": "def grafico_heatmap():\n    st.markdown(\"## Acumulado + Tendência APAC por Risco\")\n    token_url = cemaden_api_token\n    login = {'email': user_cemaden, 'password': password_cemaden}\n    response = requests.post(token_url, json=login)\n    if response.status_code == 200:\n        content = response.json()\n        token = content['token']\n        dados = consultar_ultimo_registro_estacao('260790106A')\n        (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados",
         "detail": "dev.src.page1.matriz",
         "documentation": {}
     },

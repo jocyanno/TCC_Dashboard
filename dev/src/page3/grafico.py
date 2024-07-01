@@ -35,11 +35,11 @@ def graficoAlagamentoseDeslizamentos(widthImage):
             st.subheader(f"Região: {reg}")
 
             titulos = {
-              'chuva_24h': 'Índice de chuva acumulada 24h',
-              'chuva_3d': 'Índice de chuva acumulada 3 dias',
-              'chuva_6d': 'Índice de chuva acumulada 6 dias',
-              'chuva_7d': 'Índice de chuva acumulada 7 dias',
-              'chuva_15d': 'Índice de chuva acumulada 15 dias'
+              'chuva_24h': 'Índice de chuva acumulada em 24h',
+              'chuva_3d': 'Índice de chuva acumulada em 3 dias',
+              'chuva_6d': 'Índice de chuva acumulada em 6 dias',
+              'chuva_7d': 'Índice de chuva acumulada em 7 dias',
+              'chuva_15d': 'Índice de chuva acumulada em 15 dias'
             }
 
             for coluna in ['chuva_24h', 'chuva_3d', 'chuva_6d', 'chuva_7d', 'chuva_15d']:
@@ -75,11 +75,11 @@ def graficoAlagamentoseDeslizamentos(widthImage):
 
         # Exibir os 5 gráficos diferentes para a região filtrada
         titulos = {
-          'chuva_24h': 'Índice de chuva acumulada 24h',
-          'chuva_3d': 'Índice de chuva acumulada 3 dias',
-          'chuva_6d': 'Índice de chuva acumulada 6 dias',
-          'chuva_7d': 'Índice de chuva acumulada 7 dias',
-          'chuva_15d': 'Índice de chuva acumulada 15 dias'
+          'chuva_24h': 'Índice de chuva acumulada em 24h',
+          'chuva_3d': 'Índice de chuva acumulada em 3 dias',
+          'chuva_6d': 'Índice de chuva acumulada em 6 dias',
+          'chuva_7d': 'Índice de chuva acumulada em 7 dias',
+          'chuva_15d': 'Índice de chuva acumulada em 15 dias'
         }
 
         for coluna in ['chuva_24h', 'chuva_3d', 'chuva_6d', 'chuva_7d', 'chuva_15d']:
