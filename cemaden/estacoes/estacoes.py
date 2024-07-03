@@ -4,6 +4,7 @@ sys.path.append('cemaden')
 from load_env import cemaden_api_token, password_cemaden, user_cemaden
 from db_utils import create_connection
 from utils import process_and_store_data_estacoes, verificar_e_criar_tabela
+# from cemaden import cemaden
 
 def estacoes():
   

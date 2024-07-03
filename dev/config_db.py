@@ -1,15 +1,14 @@
-# import mysql.connector
-import pymysql.cursors
+import mysql.connector
 from load_env import db_database_cemaden, db_host, db_password, db_port, db_user
 
 def create_connection():
   
-  connection = pymysql.connect(
+  connection = mysql.connector.connect(
     host=db_host,
     user=db_user,
     password=db_password,
     database=db_database_cemaden,
-    port=int(db_port)
+    port=db_port
   )
 
   return connection

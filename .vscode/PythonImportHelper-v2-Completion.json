@@ -774,7 +774,7 @@
         "kind": 5,
         "importPath": "cemaden.load_env",
         "description": "cemaden.load_env",
-        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "cemaden.load_env",
         "documentation": {}
     },
@@ -783,7 +783,7 @@
         "kind": 5,
         "importPath": "cemaden.load_env",
         "description": "cemaden.load_env",
-        "peekOfCode": "db_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database = os.getenv(\"DB_DATABASE\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "cemaden.load_env",
         "documentation": {}
     },
@@ -1008,7 +1008,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1017,7 +1017,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_password = os.getenv(\"DB_PASSWORD\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
