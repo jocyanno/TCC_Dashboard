@@ -4,6 +4,8 @@ from streamlit_option_menu import option_menu
 from src.pag.gatilhos_hidro import gatilhos_hidro
 from src.pag.monitoramento_real import monitoramento_real
 from src.pag.visao_historica import visao_historica
+from src.pag.tendencia_apac import tendencia_apac
+from src.pag.registro_ocorrencias import registro_ocorrencias
 
 favicon = Image.open("src/assets/favicon.jpg")
 
@@ -16,6 +18,8 @@ with st.sidebar:
             "Gatilhos Hidro",
             "Monitoramento Em Tempo Real",
             "Histórico Chuva Por Região",
+            "Tendência da APAC",
+            "Registro de Ocorrências",
         ],
         icons=["patch-exclamation", "r-circle-fill", "reception-4"],
         menu_icon="cast",
@@ -28,3 +32,7 @@ if selected == "Monitoramento Em Tempo Real":
     monitoramento_real()
 if selected == "Histórico Chuva Por Região":
     visao_historica()
+if selected == "Tendência da APAC":
+    tendencia_apac()
+if selected == "Registro de Ocorrências":
+    registro_ocorrencias()

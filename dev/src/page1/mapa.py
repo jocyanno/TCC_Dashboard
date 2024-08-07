@@ -16,6 +16,10 @@ def cards_informativo():
     
     data_hora_ajustada = data_hora - timedelta(hours=3)
     
+    val_24h = val_24h if val_24h is not None else 0.0
+    val_48h = val_48h if val_48h is not None else 0.0
+    val_120h = val_120h if val_120h is not None else 0.0
+    
     # Cria três colunas com larguras iguais
     col1, col2, col3 = st.columns(3)
     

@@ -60,11 +60,11 @@ def grafico_heatmap():
         apac_2dia = dados_tendencia[-2][-1]
         
         tendencia_3d_apac1 = round(float(val_72h) + float(apac_1dia), 2)
-        tendencia_3d_apac2 = round(float(val_72h) + float(apac_2dia), 2)
+        tendencia_3d_apac2 = round(float(val_72h) + float(apac_1dia) + float(apac_2dia), 2)
         tendencia_6d_apac1 = round(float(val_120h) + float(acc24hr_6d) + float(apac_1dia), 2)
-        tendencia_6d_apac2 = round(float(val_120h) + float(acc24hr_6d) + float(apac_2dia), 2)
+        tendencia_6d_apac2 = round(float(val_120h) + float(acc24hr_6d) + float(apac_1dia) + float(apac_2dia), 2)
         tendencia_10d_apac1 = round(float(val_120h) + float(acc120hr_6d) + float(acc120hr_10d) + float(apac_1dia), 2)
-        tendencia_10d_apac2 = round(float(val_120h) + float(acc120hr_6d) + float(acc120hr_10d) + float(apac_2dia), 2)
+        tendencia_10d_apac2 = round(float(val_120h) + float(acc120hr_6d) + float(acc120hr_10d) + float(apac_1dia) + float(apac_2dia), 2)
         acumulado_6d = round(float(val_120h) + float(acc24hr_6d), 2)
         acumulado_10d = round(float(val_120h) + float(acc120hr_6d) + float(acc120hr_10d), 2)
         
@@ -80,25 +80,25 @@ def grafico_heatmap():
         def get_color(value, period):
             if period == "3 dias Impacto Extremo":
                 if value < 70:
-                    return '#00FF00'  # Verde
+                    return '#209120'
                 elif 70 <= value < 100:
-                    return '#FFFF00'  # Amarelo
+                    return '#FFFF00'  
                 else:
-                    return '#FF0000'  # Vermelho
+                    return '#FF0000'  
             elif period == "6 dias Impacto Alto":
                 if value < 105:
-                    return '#00FF00'  # Verde
+                    return '#209120'
                 elif 105 <= value < 150:
-                    return '#FFFF00'  # Amarelo
+                    return '#FFFF00' 
                 else:
-                    return '#FF0000'  # Vermelho
+                    return '#FF0000' 
             elif period == "15 dias Impacto Moderado":
                 if value < 140:
-                    return '#00FF00'  # Verde
+                    return '#209120' 
                 elif 140 <= value < 200:
-                    return '#FFFF00'  # Amarelo
+                    return '#FFFF00' 
                 else:
-                    return '#FF0000'  # Vermelho
+                    return '#FF0000' 
 
         colors = df.applymap(lambda x: get_color(x, df.index[df.applymap(lambda y: y == x).any()][0]))
 
@@ -108,7 +108,7 @@ def grafico_heatmap():
             for x in range(df.shape[1]):
                 ax.text(x + 0.5, y + 0.5, f'{df.iloc[y, x]:.2f}', 
                         ha='center', va='center', color='black', fontsize=12, weight='bold')
-                ax.add_patch(plt.Rectangle((x, y), 1, 1, fill=True, color=colors.iloc[y, x], lw=0))
+                ax.add_patch(plt.Rectangle((x, y), 1, 1, fill=True, color=colors.iloc[y, x], lw=2, edgecolor='black'))
 
         ax.set_xticks([0.5, 1.5, 2.5])
         ax.set_xticklabels(df.columns)

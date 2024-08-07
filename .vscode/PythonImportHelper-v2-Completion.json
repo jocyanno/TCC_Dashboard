@@ -383,6 +383,14 @@
         "documentation": {}
     },
     {
+        "label": "tamanho_tela",
+        "importPath": "src.utils.tamanho_tela",
+        "description": "src.utils.tamanho_tela",
+        "isExtraImport": true,
+        "detail": "src.utils.tamanho_tela",
+        "documentation": {}
+    },
+    {
         "label": "atualizarPage",
         "importPath": "src.utils.auto_refresh",
         "description": "src.utils.auto_refresh",
@@ -404,6 +412,31 @@
         "description": "src.page2.seriesTemporais",
         "isExtraImport": true,
         "detail": "src.page2.seriesTemporais",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_ultimo_registro_tendencia_grafico",
+        "importPath": "config_db_Apac",
+        "description": "config_db_Apac",
+        "isExtraImport": true,
+        "detail": "config_db_Apac",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_ultimo_registro_tendencia",
+        "importPath": "config_db_Apac",
+        "description": "config_db_Apac",
+        "isExtraImport": true,
+        "detail": "config_db_Apac",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
@@ -480,15 +513,6 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "seaborn",
         "kind": 6,
         "isExtraImport": true,
@@ -504,14 +528,6 @@
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
-        "label": "consultar_ultimo_registro_tendencia",
-        "importPath": "config_db_Apac",
-        "description": "config_db_Apac",
-        "isExtraImport": true,
-        "detail": "config_db_Apac",
         "documentation": {}
     },
     {
@@ -620,6 +636,22 @@
         "description": "src.pag.visao_historica",
         "isExtraImport": true,
         "detail": "src.pag.visao_historica",
+        "documentation": {}
+    },
+    {
+        "label": "tendencia_apac",
+        "importPath": "src.pag.tendencia_apac",
+        "description": "src.pag.tendencia_apac",
+        "isExtraImport": true,
+        "detail": "src.pag.tendencia_apac",
+        "documentation": {}
+    },
+    {
+        "label": "registro_ocorrencias",
+        "importPath": "src.pag.registro_ocorrencias",
+        "description": "src.pag.registro_ocorrencias",
+        "isExtraImport": true,
+        "detail": "src.pag.registro_ocorrencias",
         "documentation": {}
     },
     {
@@ -869,6 +901,42 @@
         "documentation": {}
     },
     {
+        "label": "registro_ocorrencias",
+        "kind": 2,
+        "importPath": "dev.src.pag.registro_ocorrencias",
+        "description": "dev.src.pag.registro_ocorrencias",
+        "peekOfCode": "def registro_ocorrencias():\n    print(\"registro_ocorrencias\")",
+        "detail": "dev.src.pag.registro_ocorrencias",
+        "documentation": {}
+    },
+    {
+        "label": "cor_linha",
+        "kind": 2,
+        "importPath": "dev.src.pag.tendencia_apac",
+        "description": "dev.src.pag.tendencia_apac",
+        "peekOfCode": "def cor_linha(metropolitana):\n    # Define a cor com base na nomenclatura do argumento \"Metropolitana\"\n    if metropolitana == 'Sem chuva':\n        return 'background-color: gray'\n    elif metropolitana == 'Fraca':\n        return 'background-color: darkgray'\n    elif metropolitana == 'Fraca a moderada':\n        return 'background-color: lightblue'\n    elif metropolitana == 'Moderada':\n        return 'background-color: yellow'",
+        "detail": "dev.src.pag.tendencia_apac",
+        "documentation": {}
+    },
+    {
+        "label": "aplicar_cor",
+        "kind": 2,
+        "importPath": "dev.src.pag.tendencia_apac",
+        "description": "dev.src.pag.tendencia_apac",
+        "peekOfCode": "def aplicar_cor(row):\n    # Aplica a cor de fundo apenas à coluna \"Metropolitana\"\n    cor = cor_linha(row['Metropolitana'])\n    return [cor] * len(row)\ndef tendencia_apac():\n    widthImage = tamanho_tela()\n    st.title(\"Tendência da APAC\")\n    # Consultar dados do banco de dados\n    dados = consultar_ultimo_registro_tendencia_grafico()\n    # Criar um DataFrame para exibição, sem a coluna ID",
+        "detail": "dev.src.pag.tendencia_apac",
+        "documentation": {}
+    },
+    {
+        "label": "tendencia_apac",
+        "kind": 2,
+        "importPath": "dev.src.pag.tendencia_apac",
+        "description": "dev.src.pag.tendencia_apac",
+        "peekOfCode": "def tendencia_apac():\n    widthImage = tamanho_tela()\n    st.title(\"Tendência da APAC\")\n    # Consultar dados do banco de dados\n    dados = consultar_ultimo_registro_tendencia_grafico()\n    # Criar um DataFrame para exibição, sem a coluna ID\n    colunas = ['Data', 'Metropolitana', 'Mínima (mm)', 'Máxima (mm)']\n    df = pd.DataFrame(dados, columns=colunas)\n    # Aplicar a coloração às linhas\n    styled_df = df.style.apply(aplicar_cor, axis=1)",
+        "detail": "dev.src.pag.tendencia_apac",
+        "documentation": {}
+    },
+    {
         "label": "visao_historica",
         "kind": 2,
         "importPath": "dev.src.pag.visao_historica",
@@ -882,7 +950,7 @@
         "kind": 2,
         "importPath": "dev.src.page1.mapa",
         "description": "dev.src.page1.mapa",
-        "peekOfCode": "def cards_informativo():\n    st.title(\"Gatilhos Hidrometeorologicos Piedade\")\n    dados  = consultar_ultimo_registro_estacao('260790106A')\n    (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados\n    data_hora_ajustada = data_hora - timedelta(hours=3)\n    # Cria três colunas com larguras iguais\n    col1, col2, col3 = st.columns(3)\n    with col1:\n      st.markdown(\n        \"\"\"",
+        "peekOfCode": "def cards_informativo():\n    st.title(\"Gatilhos Hidrometeorologicos Piedade\")\n    dados  = consultar_ultimo_registro_estacao('260790106A')\n    (id, val_120h, val_12h, val_1h, val_24h, val_3h, val_48h, val_6h, val_72h, val_96h, estacao, codigo, data_hora, outro_valor, local) = dados\n    data_hora_ajustada = data_hora - timedelta(hours=3)\n    val_24h = val_24h if val_24h is not None else 0.0\n    val_48h = val_48h if val_48h is not None else 0.0\n    val_120h = val_120h if val_120h is not None else 0.0\n    # Cria três colunas com larguras iguais\n    col1, col2, col3 = st.columns(3)",
         "detail": "dev.src.page1.mapa",
         "documentation": {}
     },
@@ -945,7 +1013,7 @@
         "kind": 5,
         "importPath": "dev.app",
         "description": "dev.app",
-        "peekOfCode": "favicon = Image.open(\"src/assets/favicon.jpg\")\nst.set_page_config(page_title=\"TCC Jocyanno\", layout=\"wide\", page_icon=favicon)\nwith st.sidebar:\n    selected = option_menu(\n        menu_title=\"Menu\",\n        options=[\n            \"Gatilhos Hidro\",\n            \"Monitoramento Em Tempo Real\",\n            \"Histórico Chuva Por Região\",\n        ],",
+        "peekOfCode": "favicon = Image.open(\"src/assets/favicon.jpg\")\nst.set_page_config(page_title=\"TCC Jocyanno\", layout=\"wide\", page_icon=favicon)\nwith st.sidebar:\n    selected = option_menu(\n        menu_title=\"Menu\",\n        options=[\n            \"Gatilhos Hidro\",\n            \"Monitoramento Em Tempo Real\",\n            \"Histórico Chuva Por Região\",\n            \"Tendência da APAC\",",
         "detail": "dev.app",
         "documentation": {}
     },
@@ -1000,6 +1068,15 @@
         "importPath": "dev.config_db_Apac",
         "description": "dev.config_db_Apac",
         "peekOfCode": "def consultar_ultimo_registro_tendencia():\n  connection = create_connection_tendencia_APAC()\n  cursor = connection.cursor()\n  query = \"\"\"\n  SELECT * FROM tendencia \n  ORDER BY id DESC \n  LIMIT 5\n  \"\"\"\n  cursor.execute(query)\n  result = cursor.fetchall()",
+        "detail": "dev.config_db_Apac",
+        "documentation": {}
+    },
+    {
+        "label": "consultar_ultimo_registro_tendencia_grafico",
+        "kind": 2,
+        "importPath": "dev.config_db_Apac",
+        "description": "dev.config_db_Apac",
+        "peekOfCode": "def consultar_ultimo_registro_tendencia_grafico():\n    connection = create_connection_tendencia_APAC()\n    cursor = connection.cursor()\n    query = \"\"\"\n    SELECT data, metropolitana, min, max \n    FROM (\n        SELECT data, metropolitana, min, max \n        FROM tendencia \n        ORDER BY id DESC \n        LIMIT 5",
         "detail": "dev.config_db_Apac",
         "documentation": {}
     },

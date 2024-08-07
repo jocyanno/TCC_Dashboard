@@ -26,3 +26,22 @@ def consultar_ultimo_registro_tendencia():
   cursor.close()
   connection.close()
   return result
+
+def consultar_ultimo_registro_tendencia_grafico():
+    connection = create_connection_tendencia_APAC()
+    cursor = connection.cursor()
+    query = """
+    SELECT data, metropolitana, min, max 
+    FROM (
+        SELECT data, metropolitana, min, max 
+        FROM tendencia 
+        ORDER BY id DESC 
+        LIMIT 5
+    ) AS ultimos_registros
+    ORDER BY data ASC
+    """
+    cursor.execute(query)
+    result = cursor.fetchall()
+    cursor.close()
+    connection.close()
+    return result
