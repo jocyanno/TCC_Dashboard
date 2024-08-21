@@ -12,6 +12,7 @@ db_port = os.getenv("DB_PORT")
 db_database_cemaden = os.getenv("DB_DATABASE_CEMADEN")
 db_database_apac = os.getenv("DB_DATABASE_APAC")
 db_database_cemaden_historico = os.getenv("DB_DATABASE_CEMADEN_HISTORICO")
+db_database_deslizamentos = os.getenv("DB_DATABASE_DESLIZAMENTOS")
 
 cemaden_api_token = os.getenv("URL_CEMADEN_GET_TOKEN")
 user_cemaden = os.getenv("CEMADEN_USER")

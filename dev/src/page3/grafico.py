@@ -6,7 +6,6 @@ import pandas as pd
 def graficoAlagamentoseDeslizamentos(widthImage):
     st.title("Histórico Chuva Por Região")
     
-    # Dicionário mapeando regiões aos nomes dos arquivos
     arquivos_por_regiao = {
         "Barra de Jangada": "Barra_de_Jangada_Calculado.csv",
         "Cajueiro Seco": "Cajueiro_Seco_Calculado.csv",
