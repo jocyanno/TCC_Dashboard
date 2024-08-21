@@ -1,7 +1,7 @@
-import datetime
 import plotly.graph_objects as go
 import streamlit as st
 import pandas as pd
+from config_db_ocorrencias import create_connection_tendencia_Ocorrencias
 
 def graficoAlagamentoseDeslizamentos(widthImage):
     st.title("Histórico Chuva Por Região")
@@ -87,3 +87,34 @@ def graficoAlagamentoseDeslizamentos(widthImage):
           titulo_grafico = f"{titulos[coluna]}"
           fig.update_layout(title=titulo_grafico, xaxis_title='Data', yaxis_title=coluna, width=widthImage)
           st.plotly_chart(fig)
+          
+        # Conectar ao banco de dados e buscar os dados da tabela deslizamentos
+    connection = create_connection_tendencia_Ocorrencias()
+    cursor = connection.cursor()
+    
+    query = "SELECT date, count FROM deslizamentos"
+    cursor.execute(query)
+    result = cursor.fetchall()
+    
+    # Fechar a conexão com o banco de dados
+    cursor.close()
+    connection.close()
+    
+    # Converter os dados para um DataFrame
+    df_deslizamentos = pd.DataFrame(result, columns=['date', 'count'])
+    
+    # Converter a coluna 'date' para datetime
+    df_deslizamentos['date'] = pd.to_datetime(df_deslizamentos['date'])
+    
+    # Agrupar os dados por data e somar os valores de count
+    df_agrupado = df_deslizamentos.groupby('date').sum().reset_index()
+    
+    # Formatar a coluna 'date' para o formato dia/mês/ano
+    df_agrupado['date'] = df_agrupado['date'].dt.strftime('%d/%m/%Y')
+    
+    # Exibir o gráfico de deslizamentos
+    st.subheader("Gráfico de Deslizamentos")
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=df_agrupado['date'], y=df_agrupado['count'], mode='lines', name='Deslizamentos', line=dict(color='red')))
+    fig.update_layout(title="Quantidade de Deslizamentos por Data", xaxis_title='Data', yaxis_title='Quantidade', width=widthImage)
+    st.plotly_chart(fig)

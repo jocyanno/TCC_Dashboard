@@ -210,6 +210,46 @@
         "documentation": {}
     },
     {
+        "label": "db_host",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_deslizamentos",
+        "importPath": "load_env",
+        "description": "load_env",
+        "isExtraImport": true,
+        "detail": "load_env",
+        "documentation": {}
+    },
+    {
         "label": "create_connection",
         "importPath": "db_utils",
         "description": "db_utils",
@@ -415,6 +455,63 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection_tendencia_Ocorrencias",
+        "importPath": "config_db_ocorrencias",
+        "description": "config_db_ocorrencias",
+        "isExtraImport": true,
+        "detail": "config_db_ocorrencias",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection_tendencia_Ocorrencias",
+        "importPath": "config_db_ocorrencias",
+        "description": "config_db_ocorrencias",
+        "isExtraImport": true,
+        "detail": "config_db_ocorrencias",
+        "documentation": {}
+    },
+    {
         "label": "consultar_ultimo_registro_tendencia_grafico",
         "importPath": "config_db_Apac",
         "description": "config_db_Apac",
@@ -469,47 +566,6 @@
         "description": "config_db",
         "isExtraImport": true,
         "detail": "config_db",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -905,7 +961,7 @@
         "kind": 2,
         "importPath": "dev.src.pag.registro_ocorrencias",
         "description": "dev.src.pag.registro_ocorrencias",
-        "peekOfCode": "def registro_ocorrencias():\n    print(\"registro_ocorrencias\")",
+        "peekOfCode": "def registro_ocorrencias():\n    st.title(\"Registro de Ocorrências\")\n    if 'data' not in st.session_state:\n        st.session_state['data'] = None\n    if 'origem' not in st.session_state:\n        st.session_state['origem'] = ''\n    if 'processo' not in st.session_state:\n        st.session_state['processo'] = ''\n    if 'endereco' not in st.session_state:\n        st.session_state['endereco'] = ''",
         "detail": "dev.src.pag.registro_ocorrencias",
         "documentation": {}
     },
@@ -986,7 +1042,7 @@
         "kind": 2,
         "importPath": "dev.src.page3.grafico",
         "description": "dev.src.page3.grafico",
-        "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    st.title(\"Histórico Chuva Por Região\")\n    # Dicionário mapeando regiões aos nomes dos arquivos\n    arquivos_por_regiao = {\n        \"Barra de Jangada\": \"Barra_de_Jangada_Calculado.csv\",\n        \"Cajueiro Seco\": \"Cajueiro_Seco_Calculado.csv\",\n        \"Cavaleiro\": \"Cavaleiro_Calculado.csv\",\n        \"CavaleiroII\": \"Cavaleiro2_Calculado.csv\",\n        \"Centro\": \"Centro_Calculado.csv\",\n        \"CuradoII\": \"CuradoII_Calculado.csv\",",
+        "peekOfCode": "def graficoAlagamentoseDeslizamentos(widthImage):\n    st.title(\"Histórico Chuva Por Região\")\n    arquivos_por_regiao = {\n        \"Barra de Jangada\": \"Barra_de_Jangada_Calculado.csv\",\n        \"Cajueiro Seco\": \"Cajueiro_Seco_Calculado.csv\",\n        \"Cavaleiro\": \"Cavaleiro_Calculado.csv\",\n        \"CavaleiroII\": \"Cavaleiro2_Calculado.csv\",\n        \"Centro\": \"Centro_Calculado.csv\",\n        \"CuradoII\": \"CuradoII_Calculado.csv\",\n        \"Muribeca\": \"Muribeca_Calculado.csv\",",
         "detail": "dev.src.page3.grafico",
         "documentation": {}
     },
@@ -1081,11 +1137,20 @@
         "documentation": {}
     },
     {
+        "label": "create_connection_tendencia_Ocorrencias",
+        "kind": 2,
+        "importPath": "dev.config_db_ocorrencias",
+        "description": "dev.config_db_ocorrencias",
+        "peekOfCode": "def create_connection_tendencia_Ocorrencias():\n  connection = mysql.connector.connect(\n    host=db_host,\n    user=db_user,\n    password=db_password,\n    database=db_database_deslizamentos,\n    port=db_port\n  )\n  return connection",
+        "detail": "dev.config_db_ocorrencias",
+        "documentation": {}
+    },
+    {
         "label": "db_user",
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_user = os.getenv(\"DB_USER\")\ndb_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1094,7 +1159,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_password = os.getenv(\"DB_PASS\")\ndb_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1103,7 +1168,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_host = os.getenv(\"DB_HOST\")\ndb_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1112,7 +1177,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_port = os.getenv(\"DB_PORT\")\ndb_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1121,7 +1186,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_database_cemaden = os.getenv(\"DB_DATABASE_CEMADEN\")\ndb_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1130,7 +1195,7 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_database_apac = os.getenv(\"DB_DATABASE_APAC\")\ndb_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },
@@ -1139,7 +1204,16 @@
         "kind": 5,
         "importPath": "dev.load_env",
         "description": "dev.load_env",
-        "peekOfCode": "db_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "peekOfCode": "db_database_cemaden_historico = os.getenv(\"DB_DATABASE_CEMADEN_HISTORICO\")\ndb_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
+        "detail": "dev.load_env",
+        "documentation": {}
+    },
+    {
+        "label": "db_database_deslizamentos",
+        "kind": 5,
+        "importPath": "dev.load_env",
+        "description": "dev.load_env",
+        "peekOfCode": "db_database_deslizamentos = os.getenv(\"DB_DATABASE_DESLIZAMENTOS\")\ncemaden_api_token = os.getenv(\"URL_CEMADEN_GET_TOKEN\")\nuser_cemaden = os.getenv(\"CEMADEN_USER\")\npassword_cemaden = os.getenv(\"CEMADEN_USER_PASS\")",
         "detail": "dev.load_env",
         "documentation": {}
     },

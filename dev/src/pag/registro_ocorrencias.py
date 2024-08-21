@@ -5,7 +5,6 @@ from config_db_ocorrencias import create_connection_tendencia_Ocorrencias
 def registro_ocorrencias():
     st.title("Registro de Ocorrências")
     
-    # Inicializar o estado da sessão para os inputs
     if 'data' not in st.session_state:
         st.session_state['data'] = None
     if 'origem' not in st.session_state:
@@ -45,7 +44,6 @@ def registro_ocorrencias():
     if 'observacoes' not in st.session_state:
         st.session_state['observacoes'] = ''
 
-    # Campos de entrada
     col1, col2 = st.columns(2)
     with col1:
         st.session_state['data'] = st.date_input("DATA", value=st.session_state['data'])
@@ -95,6 +93,7 @@ def registro_ocorrencias():
             monitoramento VARCHAR(255),
             quant_moradores INT,
             cep VARCHAR(255)
+          );
         """
         cursor.execute(create_table_query)
         
